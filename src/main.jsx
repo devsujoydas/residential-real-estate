@@ -14,44 +14,43 @@ import Contact from './Pages/Contact/Contact.jsx'
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<RootPage/>,
-    errorElement:<ErrorPage/>,
-    children:[
+    path: "/",
+    element: <RootPage />,
+    errorElement: <ErrorPage />,
+    children: [
       {
-        path:"/",
-        element:<Home/>
+        path: "/",
+        element: <Home />
       },
       {
-        path:"/about",
-        element:<About/>
+        path: "/aboutus",
+        element: <About />
       },
       {
-        path:"/teams",
-        element:<Teams/>
+        path: "/teams",
+        element: <Teams />
       },
       {
-        path:"/blogs",
-        element:<Blogs/>
+        path: "/blogs",
+        element: <Blogs />
       },
       {
-        path:"/contact",
-        element:<Contact/>
+        path: "/contact",
+        element: <Contact />
       },
       {
-        path:"/signin",
-        element:<SignIn/>
+        path: "/signin",
+        element: <SignIn />
       },
       {
-        path:"/signup",
-        element:<SignUp/>
+        path: "/signup",
+        element: <SignUp />
       },
     ]
   }
 ])
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <RouterProvider router={router}/>
-  </StrictMode>,
+
+  <RouterProvider router={router} />
 )

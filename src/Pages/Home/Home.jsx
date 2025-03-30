@@ -13,7 +13,7 @@ import NewsArticles from "../../Components/NewsArticles/NewsArticles"
 const Home = () => {
   return (
     <div>
-      <Helmet><title>RRE | Home</title></Helmet>
+      <Helmet><title>RESIDENTIAL | Home</title></Helmet>
 
       <Hero />
       <FeaturedListing />

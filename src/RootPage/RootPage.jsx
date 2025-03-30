@@ -5,14 +5,14 @@ import { Helmet } from "react-helmet"
 
 const RootPage = () => {
     return (
-        <>
+        <div className="font-inter">
             <Helmet>
                 <title>RESIDENTIAL REAL ESTATE</title>
             </Helmet>
             <Header />
             <Outlet />
             <Footer />
-        </>
+        </div>
     )
 }
 
