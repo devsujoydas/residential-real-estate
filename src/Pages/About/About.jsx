@@ -1,7 +1,13 @@
+import { Helmet } from "react-helmet"
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <Helmet>
+        <title>RRE | About</title>
+      </Helmet>
+      <h1>About</h1>
+    </div>
   )
 }
 

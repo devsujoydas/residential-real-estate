@@ -1,7 +1,13 @@
+import { Helmet } from "react-helmet"
 
 const Blogs = () => {
   return (
-    <div>Blogs</div>
+    <div>
+      <Helmet>
+        <title>RRE | Blogs</title>
+      </Helmet>
+      <h1>Blogs</h1>
+    </div>
   )
 }
 

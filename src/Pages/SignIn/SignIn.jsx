@@ -2,7 +2,12 @@
 
 const SignIn = () => {
   return (
-    <div>SignIn</div>
+    <div>
+      <Helmet>
+        <title>RRE | SignIn</title>
+      </Helmet>
+      <h1>SignIn</h1>
+    </div>
   )
 }
 

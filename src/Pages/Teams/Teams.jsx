@@ -1,8 +1,14 @@
+import { Helmet } from "react-helmet"
 
 
 const Teams = () => {
   return (
-    <div>Teams</div>
+    <div>
+      <Helmet>
+        <title>RRE | Teams</title>
+      </Helmet>
+      <h1>Teams</h1>
+    </div>
   )
 }
 
