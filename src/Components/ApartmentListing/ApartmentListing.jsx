@@ -18,7 +18,7 @@ const ApartmentListing = () => {
         </div>
 
 
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
 
           <div className="bg-[#0D0D0C] text-center space-y-4 text-white rounded-3xl p-8 flex flex-col justify-center items-center">
             <div className="bg-[#33424B] p-6 rounded-full">

@@ -7,7 +7,9 @@ const Blog = () => {
     return (
         <div className="space-y-8">
             <div className="rounded-3xl overflow-hidden">
-                <img className="hover:scale-110 transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/06/Untitled-1.png" alt="" />
+                <Link to={"/blogDetails"}>
+                    <img className="hover:scale-110 transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/06/Untitled-1.png" alt="" />
+                </Link>
             </div>
 
             <div className="space-y-4">
