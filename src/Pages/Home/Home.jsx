@@ -8,6 +8,7 @@ import BestProjects from "../../Components/BestProjects/BestProjects"
 import Testimonial from "../../Components/Testimonial/Testimonial"
 import TeamMembers from "../../Components/TeamMembers/TeamMembers"
 import NewsArticles from "../../Components/NewsArticles/NewsArticles"
+import InstaPage from "../../Components/InstaPage/InstaPage"
 
 
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
       <Testimonial />
       <TeamMembers />
       <NewsArticles />
-
+      <InstaPage />
     </div>
   )
 }

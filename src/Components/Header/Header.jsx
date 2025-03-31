@@ -30,7 +30,7 @@ const Header = () => {
     //     setIsOpen(!isOpen)
     //   }
 
-    const navBtnStyle = "px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700"
+    const navBtnStyle = " mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-yellow-400  dark:hover:bg-gray-700"
 
 
     return (

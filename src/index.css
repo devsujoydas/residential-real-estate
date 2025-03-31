@@ -10,27 +10,14 @@
   font-family: "Inter", sans-serif;
 }
 
-.swiper {
-    width: 100%;
-    height: 90vh;
-  }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
+
 
   .hero-bg-color{
     background-color: rgba(0, 0, 0, 0.598);
   }
 
   .active{
-    background: rgb(143, 143, 143);
+    color: rgb(255, 217, 0);
   }
 
   .aboutus-rotator{

@@ -13,7 +13,7 @@ const Hero = () => {
     'flex justify-center items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-2 rounded-full hover:bg-white hover:text-black transition-all active:scale-95 cursor-pointer'
 
   return (
-    <>
+    <div className='h-[95vh]'>
       <Swiper
         spaceBetween={30}
         effect={'fade'}
@@ -33,7 +33,7 @@ const Hero = () => {
                 "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_1.png')"
             }}
           >
-            <div className='h-[100vh] hero-bg-color w-full  flex justify-center  items-center'>
+            <div className='h-[90vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
                 <div className='flex justify-center items-center md:gap-10 gap-5 font-medium'>
                   <button className={btnStyle}>
@@ -58,7 +58,7 @@ const Hero = () => {
                 </h1>
 
                 <div>
-                  <button className='flex justify-center  items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-4 rounded-full bg-[#1C2D37] hover:border-transparent hover:bg-[#223d4d] active:scale-95 transition-all  cursor-pointer'>
+                  <button className='px-8 py-5 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all'>
                     <p>Request A Visit </p>
                     <FaArrowRight />
                   </button>
@@ -80,7 +80,7 @@ const Hero = () => {
                 "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_2.png')"
             }}
           >
-            <div className='h-[100vh] hero-bg-color w-full  flex justify-center  items-center'>
+            <div className='h-[90vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
                 <div className='flex justify-center items-center md:gap-10 gap-5 font-medium'>
                   <button className={btnStyle}>
@@ -104,7 +104,7 @@ const Hero = () => {
                 </h1>
 
                 <div>
-                  <button className='flex justify-center  items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-4 rounded-full bg-[#1C2D37] hover:border-transparent hover:bg-[#223d4d] active:scale-95 transition-all  cursor-pointer'>
+                  <button className='px-8 py-5 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all'>
                     <p>Request A Visit </p>
                     <FaArrowRight />
                   </button>
@@ -126,7 +126,7 @@ const Hero = () => {
                 "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_3.png')"
             }}
           >
-            <div className='h-[100vh] hero-bg-color w-full  flex justify-center  items-center'>
+            <div className='h-[90vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
                 <div className='flex justify-center items-center md:gap-10 gap-5 font-medium'>
                   <button className={btnStyle}>
@@ -150,7 +150,7 @@ const Hero = () => {
                 </h1>
 
                 <div>
-                  <button className='flex justify-center  items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-4 rounded-full bg-[#1C2D37] hover:border-transparent hover:bg-[#223d4d] active:scale-95 transition-all  cursor-pointer'>
+                  <button className='px-8 py-5 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all'>
                     <p>Request A Visit </p>
                     <FaArrowRight />
                   </button>
@@ -164,7 +164,7 @@ const Hero = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   )
 }
 

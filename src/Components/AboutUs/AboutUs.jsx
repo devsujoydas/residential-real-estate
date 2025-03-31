@@ -7,7 +7,7 @@ const AboutUs = () => {
 
   return (
     <div>
-      <div className="max-w-7xl md:mx-auto md:px-0 px-5 my-20 grid grid-cols-2 gap-14">
+      <div className="max-w-7xl md:mx-auto md:px-0 px-5 my-30 grid grid-cols-2 gap-14">
 
         <div className=" w-full flex justify-center items-center ">
           <div className="overflow-hidden">
@@ -31,7 +31,7 @@ const AboutUs = () => {
               <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Highly professional team</h1>
               <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Dealing always on time</h1>
 
-              <button className="border px-6 py-5 rounded-full cursor-pointer bg-[#0D0D0C] text-white hover:translate-x-1 transition-all duration-300 flex justify-center items-center gap-2">More About Realar<FaArrowRight /></button>
+              <button className="border px-8 py-5 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all">More About Realar<FaArrowRight /></button>
             </div>
 
 

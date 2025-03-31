@@ -1,4 +1,8 @@
 import { Helmet } from "react-helmet"
+import { FaArrowRight } from 'react-icons/fa'
+import { Link } from "react-router-dom"
+import Member from "../../Components/TeamMembers/Member"
+import ScheduleVisit from "../../Components/Awards/ScheduleVisit"
 
 
 const Teams = () => {
@@ -7,7 +11,67 @@ const Teams = () => {
       <Helmet>
         <title>RRE | Teams</title>
       </Helmet>
-      <h1>Teams</h1>
+
+
+      {/* Navigaiton  */}
+      <div className="h-86 flex justify-center items-center text-white" style={{ backgroundImage: "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/breadcumb-bg.png')" }}>
+        <div className="max-w-7xl mx-auto space-y-5">
+          <h1 className="text-5xl font-semibold  text-center">Team</h1>
+          <h1 className="text-xl flex justify-center items-center gap-2"><Link to={"/"} className="hover:text-yellow-400 active:scale-95 transition-all">Home</Link> <FaArrowRight />Team</h1>
+        </div>
+      </div>
+
+
+      {/* Teams Member  */}
+      <div className="max-w-7xl mx-auto my-20 grid md:grid-cols-3 gap-5">
+        <Member />
+        <Member />
+        <Member />
+        <Member />
+        <Member />
+        <Member />
+      </div>
+
+
+      {/* brand logos  */}
+      <div className=" bg-[#A4B5BA]">
+        <div className="max-w-7xl mx-auto py-20">
+          <div className='flex justify-between items-center gap-10 pt-10'>
+
+            <div>
+              <img className='hover:scale-110 transition-all duration-300' src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/brand_2_1.svg" alt="" />
+            </div>
+
+            <div>
+              <img className='hover:scale-110 transition-all duration-300' src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/brand_2_2.svg" alt="" />
+            </div>
+
+            <div>
+              <img className='hover:scale-110 transition-all duration-300' src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/brand_2_3.svg" alt="" />
+            </div>
+
+            <div>
+              <img className='hover:scale-110 transition-all duration-300' src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/brand_2_4.svg" alt="" />
+            </div>
+
+            <div>
+              <img className='hover:scale-110 transition-all duration-300' src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/brand_2_5.svg" alt="" />
+            </div>
+
+            <div>
+              <img className='hover:scale-110 transition-all duration-300' src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/brand_2_6.svg" alt="" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* Schedule a Visit  */}
+      <div className="max-w-7xl mx-auto my-20 ">
+      <ScheduleVisit/>
+
+      </div>
+
     </div>
   )
 }

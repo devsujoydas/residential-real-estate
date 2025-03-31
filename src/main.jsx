@@ -11,6 +11,8 @@ import SignIn from './Pages/SignIn/SignIn.jsx'
 import SignUp from './Pages/SignUp/SignUp.jsx'
 import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx'
 import Contact from './Pages/Contact/Contact.jsx'
+import MemberDetails from './Pages/Teams/MemberDetails.jsx'
+import BlogDetails from './Pages/Blogs/BlogDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -31,8 +33,16 @@ const router = createBrowserRouter([
         element: <Teams />
       },
       {
+        path: "/memberDetails",
+        element: <MemberDetails />
+      },
+      {
         path: "/blogs",
         element: <Blogs />
+      },
+      {
+        path: "/blogDetails",
+        element: <BlogDetails />
       },
       {
         path: "/contact",

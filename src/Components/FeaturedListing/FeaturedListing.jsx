@@ -1,5 +1,10 @@
-
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { FreeMode, Autoplay } from 'swiper/modules'
 import FeaturedCard from "./FeaturedCard";
+
 const FeaturedListing = () => {
   return (
     <div>
@@ -15,11 +20,29 @@ const FeaturedListing = () => {
         </div>
 
 
-        <div className="grid grid-cols-3 gap-5">
-          <FeaturedCard />
-          <FeaturedCard />
-          <FeaturedCard />
-        </div>
+      
+
+        <div className='my-16'>
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={20}
+              freeMode={true}
+              loop={true}
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false
+              }}
+              modules={[FreeMode, Autoplay]}
+              className='awards-imgs rounded-3xl'
+            >
+              <SwiperSlide><FeaturedCard /></SwiperSlide>
+              <SwiperSlide><FeaturedCard /></SwiperSlide>
+              <SwiperSlide><FeaturedCard /></SwiperSlide>
+              <SwiperSlide><FeaturedCard /></SwiperSlide>
+              <SwiperSlide><FeaturedCard /></SwiperSlide>
+              
+            </Swiper>
+          </div>
 
 
       </div>

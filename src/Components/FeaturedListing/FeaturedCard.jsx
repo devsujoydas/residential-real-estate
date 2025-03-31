@@ -5,7 +5,7 @@ import { PiBathtubLight } from "react-icons/pi";
 const FeaturedCard = () => {
     return (
         <div>
-            <div className="border rounded-3xl overflow-hidden">
+            <div className="border border-gray-300 rounded-3xl overflow-hidden">
                 <div className="overflow-hidden">
                     <img className="hover:scale-110 transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/07/property3-2.png" alt="" />
                 </div>
@@ -17,7 +17,7 @@ const FeaturedCard = () => {
                         <h1 className="text-gray-500">Inner Circular Lamar Street, Houston, Texas</h1>
                     </div>
                     <h1 className="text-gray-500">Egestas Fringilla phasellus faucibus scelerisque eleifend donec. Porta nibh venenatis</h1>
-                    
+
                     <div className="flex justify-between items-center">
                         <div className="flex justify-center items-center gap-2  w-full">
                             <IoBedOutline />
@@ -32,7 +32,7 @@ const FeaturedCard = () => {
                             <h1>1690 sqft</h1>
                         </div>
                     </div>
-                    <hr className="text-gray-300"/>
+                    <hr className="text-gray-300" />
 
                     <div className="flex justify-between items-center">
                         <div className="flex items-center gap-2 cursor-pointer">
@@ -47,7 +47,8 @@ const FeaturedCard = () => {
                         </div>
                     </div>
                 </div>
-            </div></div>
+            </div>
+        </div>
     )
 }
 
