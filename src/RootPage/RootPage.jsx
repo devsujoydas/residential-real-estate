@@ -9,6 +9,7 @@ const RootPage = () => {
             <Helmet>
                 <title>RESIDENTIAL REAL ESTATE</title>
             </Helmet>
+            
             <Header />
             <Outlet />
             <Footer />
