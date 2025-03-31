@@ -10,7 +10,7 @@ import 'swiper/css/pagination'
 import { EffectFade, Autoplay } from 'swiper/modules'
 const Hero = () => {
   const btnStyle =
-    'flex justify-center items-center gap-5 border py-4 px-6 rounded-full hover:bg-white hover:text-black transition-all active:scale-95 cursor-pointer'
+    'flex justify-center items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-2 rounded-full hover:bg-white hover:text-black transition-all active:scale-95 cursor-pointer'
 
   return (
     <>
@@ -35,7 +35,7 @@ const Hero = () => {
           >
             <div className='h-[100vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center items-center gap-10 font-medium'>
+                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium'>
                   <button className={btnStyle}>
                     <p>Sales</p>
                     <FaArrowRight />
@@ -53,18 +53,18 @@ const Hero = () => {
                 </div>
 
 
-                <h1 className='text-7xl font-bold font-outfit text-center'>
+                <h1 className='md:text-7xl text-3xl font-bold font-outfit text-center'>
                   Elevate Your Lifestyle Where <br /> Luxury Meets Comfort
                 </h1>
 
                 <div>
-                  <button className='flex justify-center  items-center gap-5 border py-4 px-6 rounded-full bg-[#1C2D37] hover:border-transparent hover:bg-[#223d4d] active:scale-95 transition-all  cursor-pointer'>
+                  <button className='flex justify-center  items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-4 rounded-full bg-[#1C2D37] hover:border-transparent hover:bg-[#223d4d] active:scale-95 transition-all  cursor-pointer'>
                     <p>Request A Visit </p>
                     <FaArrowRight />
                   </button>
                 </div>
 
-                <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
+                <button className='absolute bottom-10 md:text-7xl text-3xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
                 </button>
               </div>
@@ -82,7 +82,7 @@ const Hero = () => {
           >
             <div className='h-[100vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center items-center gap-10 font-medium'>
+                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium'>
                   <button className={btnStyle}>
                     <p>Sales</p>
                     <FaArrowRight />
@@ -99,18 +99,18 @@ const Hero = () => {
                   </button>
                 </div>
 
-                <h1 className='text-7xl font-bold font-outfit text-center'>
+                <h1 className='md:text-7xl text-3xl font-bold font-outfit text-center'>
                   Discover Your Comfortable <br /> & Flexible Living House
                 </h1>
 
                 <div>
-                  <button className='flex justify-center  items-center gap-5 border py-4 px-6 rounded-full bg-[#1C2D37] hover:border-transparent hover:bg-[#223d4d] active:scale-95 transition-all  cursor-pointer'>
+                  <button className='flex justify-center  items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-4 rounded-full bg-[#1C2D37] hover:border-transparent hover:bg-[#223d4d] active:scale-95 transition-all  cursor-pointer'>
                     <p>Request A Visit </p>
                     <FaArrowRight />
                   </button>
                 </div>
 
-                <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
+                <button className='absolute bottom-10 md:text-7xl text-3xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
                 </button>
               </div>
@@ -128,7 +128,7 @@ const Hero = () => {
           >
             <div className='h-[100vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center items-center gap-10 font-medium'>
+                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium'>
                   <button className={btnStyle}>
                     <p>Sales</p>
                     <FaArrowRight />
@@ -145,18 +145,18 @@ const Hero = () => {
                   </button>
                 </div>
 
-                <h1 className='text-7xl font-bold font-outfit text-center'>
+                <h1 className='md:text-7xl text-3xl font-bold font-outfit text-center'>
                   Experience The Harmonious <br /> Blend Of Luxury
                 </h1>
 
                 <div>
-                  <button className='flex justify-center  items-center gap-5 border py-4 px-6 rounded-full bg-[#1C2D37] hover:border-transparent hover:bg-[#223d4d] active:scale-95 transition-all  cursor-pointer'>
+                  <button className='flex justify-center  items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-4 rounded-full bg-[#1C2D37] hover:border-transparent hover:bg-[#223d4d] active:scale-95 transition-all  cursor-pointer'>
                     <p>Request A Visit </p>
                     <FaArrowRight />
                   </button>
                 </div>
 
-                <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
+                <button className='absolute bottom-10 md:text-7xl text-3xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
                 </button>
               </div>

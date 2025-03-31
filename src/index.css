@@ -28,3 +28,18 @@
   .hero-bg-color{
     background-color: rgba(0, 0, 0, 0.598);
   }
+
+  .active{
+    background: rgb(143, 143, 143);
+  }
+
+  .aboutus-rotator{
+    animation: spin 4s infinite linear; /* spin 1s linear infinite */
+  }
+
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }

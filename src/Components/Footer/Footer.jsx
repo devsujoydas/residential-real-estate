@@ -15,9 +15,9 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="bg-[#1C2D37] text-gray-400 md:py-20">
+      <div className="bg-[#1C2D37] text-gray-400 md:py-20 py-10">
 
-        <div className="max-w-7xl mx-auto flex justify-between md:flex-row flex-col gap-10">
+        <div className="max-w-7xl md:mx-auto px-5 md:px-0 flex justify-between md:flex-row flex-col gap-10">
 
           {/* Logo  */}
           <div className="grid gap-8">
@@ -83,8 +83,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#A4B5BA]">
-        <div className=" py-5 flex justify-between items-center max-w-7xl mx-auto">
+      <div className="bg-[#A4B5BA] md:px-0 px-5">
+        <div className=" py-5 flex justify-between items-center md:flex-row flex-col gap-2 max-w-7xl mx-auto">
           <h1>&copy;  2025 By <a href="www.facebook.com/devsujoy36" className="font-semibold">Sujoy Das</a>. All Rights Reserved.</h1>
           <div className="flex gap-4">
             <Link to={"/"}> <FaFacebookF className={socialBtnStyle} /></Link>
