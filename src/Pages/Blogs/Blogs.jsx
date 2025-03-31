@@ -22,10 +22,10 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto py-20 grid grid-cols-3 gap-8 ">
+      <div className="max-w-7xl mx-auto lg:px-0 px-5 lg:py-20 py-10 grid lg:grid-cols-3 gap-8 ">
 
         {/* Blog Container  */}
-        <div className="col-span-2 grid gap-16">
+        <div className="lg:col-span-2 grid gap-16">
           <Blog />
           <Blog />
         </div>

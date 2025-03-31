@@ -23,7 +23,7 @@ const Teams = () => {
 
 
       {/* Teams Member  */}
-      <div className="max-w-7xl mx-auto my-20 grid md:grid-cols-3 gap-5">
+      <div className="max-w-7xl mx-auto md:my-20 my-10 lg:p-0 p-5 grid md:grid-cols-3 gap-5">
         <Member />
         <Member />
         <Member />
@@ -35,8 +35,8 @@ const Teams = () => {
 
       {/* brand logos  */}
       <div className=" bg-[#A4B5BA]">
-        <div className="max-w-7xl mx-auto py-20">
-          <div className='flex justify-between items-center gap-10 pt-10'>
+        <div className="max-w-7xl mx-auto py-10 lg:px-0 px-5 lg:py-20">
+          <div className='grid grid-cols-3 md:grid-cols-6 gap-10 pt-10'>
 
             <div>
               <img className='hover:scale-110 transition-all duration-300' src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/brand_2_1.svg" alt="" />
@@ -67,7 +67,7 @@ const Teams = () => {
       </div>
 
       {/* Schedule a Visit  */}
-      <div className="max-w-7xl mx-auto my-20 ">
+      <div className="max-w-7xl mx-auto lg:my-20 my-10 lg:px-0 px-5 ">
       <ScheduleVisit/>
 
       </div>

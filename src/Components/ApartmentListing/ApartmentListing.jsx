@@ -2,16 +2,15 @@ import { FaArrowRight } from "react-icons/fa6";
 const ApartmentListing = () => {
   return (
     <div className="relative">
-        <img className="absolute left-10 -top-10 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
-        {/* <img className="absolute left-10 -bottom-20 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_3.png" alt="" /> */}
-        <img className="absolute right-14 bottom-0 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
+        <img className="absolute md:block hidden left-10 -top-10 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
+        <img className="absolute md:block hidden right-14 bottom-0 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
       
       
-      <div className="max-w-7xl md:mx-auto md:px-0 px-5 my-20 space-y-7">
+      <div className="max-w-7xl md:mx-auto md:px-0 px-5 md:my-20 my-10 space-y-7">
 
         <h1 className="w-fit border-t border-b py-1">More than 745K apartment listing</h1>
 
-        <div className="flex justify-between items-center ">
+        <div className="flex justify-between items-center md:flex-row flex-col gap-5">
           <h1 className="text-5xl font-semibold font-outfit">Buy, Rent & Sell</h1>
 
           <button className="border px-8 py-4 rounded-full cursor-pointer hover:bg-[#0D0D0C] hover:text-white hover:translate-x-1 transition-all duration-300 flex justify-center items-center gap-2 active:scale-95 ">View all Properties<FaArrowRight /></button>

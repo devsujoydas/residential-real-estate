@@ -8,7 +8,7 @@ import FeaturedCard from "./FeaturedCard";
 const FeaturedListing = () => {
   return (
     <div>
-      <div className="max-w-7xl md:mx-auto md:px-0 px-5 md:my-20 space-y-7">
+      <div className="max-w-7xl md:mx-auto lg:px-0 px-5 lg:my-20 space-y-7">
 
         <h1 className="w-fit md:text-md text-sm border-t border-b py-1">Featured Listing</h1>
 

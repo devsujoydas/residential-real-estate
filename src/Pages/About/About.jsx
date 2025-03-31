@@ -22,23 +22,23 @@ const About = () => {
       </div>
 
       {/* Realar Vission & Mission  */}
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto">
-          <div className=" flex justify-center items-center gap-20">
+      <div className="md:py-16 py-10 lg:px-0 px-5">
+        <div className="max-w-7xl mx-auto space-y-5">
+
+          <div className=" flex justify-center items-center gap-5 lg:gap-20 md:flex-row flex-col-reverse">
             <div className="md:w-1/2 space-y-5">
-              <h1 className="text-5xl font-outfit font-semibold">Realar Vission & Mission</h1>
+              <h1 className="md:text-5xl text-3xl font-outfit font-semibold">Realar Vission & Mission</h1>
               <p className="leading-8 text-gray-700">You are the center of our process. Your needs, your wants, and your goals. We actively listen, always keep it even keel — never rushing you or pushing something you don’t need. <br />
                 Full transparency is our goal. We stay connected while building your home, clearly outlining next steps and collaborating with you to select personal design details. From day one, your peace of mind is our highest priority.</p>
             </div>
             <div className="md:w-1/2">
               <div className="rounded-3xl overflow-hidden">
-
                 <img className="w-full  hover:scale-110 transition-all duration-500 " src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/about_3_1.png" alt="" />
               </div>
             </div>
           </div>
 
-          <div className=" flex justify-center items-center gap-20">
+          <div className=" flex justify-center items-center gap-5 lg:gap-20 md:flex-row flex-col">
             <div className="md:w-1/2">
               <div className="rounded-3xl overflow-hidden">
                 <img className="w-full  hover:scale-110 transition-all duration-500 " src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/about_3_2.png" alt="" />
@@ -61,16 +61,16 @@ const About = () => {
 
         <div className="max-w-7xl md:mx-auto md:px-0 px-5 my-20 space-y-7">
 
-          <h1 className="text-5xl font-semibold font-outfit">Why Choose Us?</h1>
+          <h1 className="md:text-5xl text-3xl font-semibold font-outfit">Why Choose Us?</h1>
 
-          <div className="flex justify-between items-center ">
-            <h1>We are a real estate firm with over 20 years of expertise, and our main <br /> goal is to provide amazing locations to our partners and clients. Within the <br /> luxury real estate market, our agency offers customized solutions.</h1>
+          <div className="flex justify-between items-center md:flex-row flex-col">
+            <h1 className="md:text-md text-sm">We are a real estate firm with over 20 years of expertise, and our main <br /> goal is to provide amazing locations to our partners and clients. Within the <br /> luxury real estate market, our agency offers customized solutions.</h1>
             <button className="border px-6 py-4 rounded-full cursor-pointer hover:bg-gray-600 hover:text-white hover:translate-x-1 transition-all duration-300">Contact Us</button>
           </div>
 
 
 
-          <div className="grid grid-cols-3 gap-5 pt-10">
+          <div className="grid md:grid-cols-3 gap-5 pt-10">
 
             {/* card  */}
             <div className=" space-y-4 text-white rounded-3xl">
@@ -116,8 +116,8 @@ const About = () => {
       </div>
 
       {/* brand logos  */}
-      <div className="max-w-7xl mx-auto py-20">
-        <div className='flex justify-between items-center gap-10 pt-10'>
+      <div className="max-w-7xl mx-auto lg:py-20 lg:p-0 p-5">
+        <div className='grid grid-cols-3 md:grid-cols-6 gap-10 pt-10'>
 
           <div>
             <img className='hover:scale-110 transition-all duration-300' src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/brand_2_1.svg" alt="" />

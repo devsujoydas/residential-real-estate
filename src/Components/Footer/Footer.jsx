@@ -17,7 +17,7 @@ const Footer = () => {
     <div>
       <div className="bg-[#1C2D37] text-gray-400 md:py-20 py-10">
 
-        <div className="max-w-7xl md:mx-auto px-5 md:px-0 flex justify-between md:flex-row flex-col gap-10">
+        <div className="max-w-7xl md:mx-auto px-5 lg:px-0 flex justify-between lg:flex-row flex-col gap-10">
 
           {/* Logo  */}
           <div className="grid gap-8">
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
 
           {/* Get In Touch  */}
-          <div className="grid gap-5">
+          <div className="grid md:gap-5 gap-3">
             <h1 className="text-2xl font-semibold text-white font-outfit">Get In Touch</h1>
 
             <div className="flex gap-4 items-center">
@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="grid gap-5">
             <h1 className="text-2xl font-semibold text-white font-outfit">Usefull Link</h1>
 
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-2 md:space-y-4">
               <a href="/" className={footerBtns}><MdArrowForwardIos className="hover:translate-x-1 transition-all duration-300" />Pricing Page</a>
               <a href="/" className={footerBtns}><MdArrowForwardIos className="hover:translate-x-1 transition-all duration-300" />Privacy & Policy</a>
               <a href="/" className={footerBtns}><MdArrowForwardIos className="hover:translate-x-1 transition-all duration-300" />What we do</a>
@@ -71,7 +71,7 @@ const Footer = () => {
           <div className="grid gap-5">
             <h1 className="text-2xl font-semibold text-white font-outfit">Explore</h1>
 
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-2 md:space-y-4">
               <a href="/" className={footerBtns}><MdArrowForwardIos className="hover:translate-x-1 transition-all duration-300" />All Properties</a>
               <a href="/" className={footerBtns}><MdArrowForwardIos className="hover:translate-x-1 transition-all duration-300" />All Author</a>
               <a href="/" className={footerBtns}><MdArrowForwardIos className="hover:translate-x-1 transition-all duration-300" />Our Team</a>

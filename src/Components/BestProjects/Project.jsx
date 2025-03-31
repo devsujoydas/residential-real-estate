@@ -1,5 +1,4 @@
-import { FaArrowRight } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
+
 import { IoBedOutline } from "react-icons/io5";
 import { PiBathtubLight } from "react-icons/pi";
 
@@ -11,13 +10,13 @@ const Project = () => {
                     <img className="hover:scale-110 cursor-pointer rounded-3xl w-full transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/07/project_4_1.png" alt="" />
                 </div>
 
-                <div className=" pt-5 space-y-7 text-center">
+                <div className=" pt-5 md:space-y-7 space-y-4 text-center">
                     <div>
                         <h1 className="text-2xl font-outfit font-semibold ">Residential</h1>
                         <h1 className=" text-gray-500 text-lg">California</h1>
                     </div>
 
-                    <div className="flex px-30 justify-between items-center">
+                    <div className="flex md:px-30 px-10 justify-between items-center">
                         <div className="flex justify-center items-center gap-2  w-full">
                             <IoBedOutline />
                             <h1>Bed 4</h1>

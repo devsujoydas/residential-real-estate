@@ -9,10 +9,10 @@ import { FaArrowRight } from 'react-icons/fa'
 const BestProjects = () => {
   return (
     <div className="relative">
-      <img className="absolute left-10 top-10 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
-      <img className="absolute right-10 bottom-10 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
+      <img className="absolute md:h-fit h-20 left-5 md:left-10 md:top-10 top-2 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
+      <img className="absolute md:h-fit h-20 md:right-10 right-2  md:bottom-10 bottom-2 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
 
-      <div className="md:py-25">
+      <div className="lg:py-25 py-10">
         {/* Section Heading  */}
         <div className="flex justify-center items-center flex-col space-y-5">
           <h1 className="  border-t border-b py-1">Best Project</h1>
@@ -21,15 +21,29 @@ const BestProjects = () => {
         </div>
 
         {/* slider  */}
-        <div className='my-10'>
+        <div className='my-10 lg:px-0 px-5'>
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={20}
             freeMode={true}
             loop={true}
             autoplay={{
               delay: 1000,
               disableOnInteraction: false
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
             }}
             modules={[FreeMode, Autoplay]}
             className='awards-imgs'
@@ -45,7 +59,7 @@ const BestProjects = () => {
 
 
         <div className="flex justify-center items-center">
-          <button className="border px-8 py-5 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all">Brows All Project<FaArrowRight /></button>
+          <button className="border md:px-8 px-4 md:py-5 py-3 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all">Brows All Project<FaArrowRight /></button>
         </div>
 
 

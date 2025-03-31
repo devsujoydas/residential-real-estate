@@ -5,8 +5,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Autoplay } from 'swiper/modules'
-import { FaInstagram } from "react-icons/fa6";
-import InstaImgs from "./instaImgs";
+import InstaImgs from "./InstaImgs";
 
 
 
@@ -14,19 +13,33 @@ const InstaPage = () => {
   return (
     <div className="relative">
       
-      <div className="md:py-20">
+      <div className="lg:py-20 py-10 lg:px-0 px-5">
         
 
         {/* slider  */}
         <div className='my-10'>
           <Swiper
-            slidesPerView={5}
+            slidesPerView={1}
             spaceBetween={20}
             freeMode={true}
             loop={true}
             autoplay={{
               delay: 1000,
               disableOnInteraction: false
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+              },
             }}
             modules={[FreeMode, Autoplay]}
             className=''

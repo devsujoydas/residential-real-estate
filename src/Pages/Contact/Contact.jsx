@@ -17,23 +17,25 @@ const Contact = () => {
 
 
       {/* Navigaiton  */}
-      <div className="h-96   flex justify-center items-center text-white" style={{ backgroundImage: "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/breadcumb-bg.png')" }}>
+      <div className="h-96 flex justify-center items-center text-white" style={{ backgroundImage: "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/breadcumb-bg.png')" }}>
         <div className="max-w-7xl mx-auto space-y-5">
           <h1 className="text-5xl font-semibold  text-center">Contact</h1>
           <h1 className="text-xl flex justify-center items-center gap-2"><Link to={"/"} className="hover:text-yellow-400 active:scale-95 transition-all">Home</Link> <FaArrowRight />Contact </h1>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto p-26 space-y-5">
+      <div className="max-w-7xl mx-auto lg:py-26 py-10 lg:px-24 px-5 space-y-5">
+
+
         {/* Get In Touch  */}
         <div className="flex flex-col justify-center items-center gap-5">
           <h1 className="border-t border-b w-fit text-xl  ">Get In Touch</h1>
-          <h1 className="text-5xl font-outfit font-semibold ">Our Contact Information</h1>
+          <h1 className="md:text-5xl text-3xl font-outfit font-semibold ">Our Contact Information</h1>
         </div>
 
 
         {/* Address container  */}
-        <div className="grid grid-cols-3 gap-5 mt-10 text-white ">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 lg:mt-10 text-white ">
 
           <div className="bg-[#1C2D37] p-5 flex items-center gap-5 rounded-xl">
             <div className="col-span-1 text-6xl flex  items-center">
@@ -74,7 +76,7 @@ const Contact = () => {
 
 
       {/* Schedule a Visit  */}
-      <div className="bg-white py-20">
+      <div className="bg-white lg:py-20 py-5 lg:px-0 px-5">
       <div className="border-t rounded-3xl max-w-7xl mx-auto">
         <ScheduleVisit />
       </div>

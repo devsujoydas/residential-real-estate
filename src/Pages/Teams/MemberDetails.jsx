@@ -22,10 +22,10 @@ const MemberDetails = () => {
 
 
             {/* Member card  */}
-            <div className='max-w-7xl md:mx-auto lg:px-0 px-5 grid lg:grid-cols-3  gap-10 py-20'>
+            <div className='max-w-7xl md:mx-auto lg:px-0 px-5 grid lg:grid-cols-3  gap-10 md:py-20 py-10'>
 
                 {/* member img  */}
-                <div className='col-span-1'>
+                <div className='md:col-span-1'>
                     <div>
                         <div className="border border-gray-300 rounded-3xl overflow-hidden">
                             <div className="overflow-hidden">
@@ -46,10 +46,11 @@ const MemberDetails = () => {
                 </div>
 
                 {/* member details  */}
-                <div className='col-span-2 space-y-10'>
-                    <h1 className='font-outfit text-3xl font-semibold'>Building lasting relationships based on trust and integrity is at the core of Scarlett Gray’s practice. He takes pride in providing exceptional service.</h1>
+                <div className='md:col-span-2 space-y-10'>
+                    <h1 className='font-outfit md:text-3xl text-2xl font-semibold'>Building lasting relationships based on trust and integrity is at the core of Scarlett Gray’s practice. He takes pride in providing exceptional service.</h1>
 
-                    <div className="flex items-center  gap-30">
+                    <div className="flex items-center md:flex-row flex-col md:gap-30 gap-5">
+
                         <div className=" flex justify-between items-center gap-5">
                             <div className="grid gap-2">
                                 <h1 className="font-semibold">Position:</h1>
@@ -80,23 +81,24 @@ const MemberDetails = () => {
                         </div>
                     </div>
 
-                    <p className="text-lg text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    <p className="md:text-lg text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                         <br />
                         <br />
                         Realar rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequu ntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                     </p>
-                    <h1 className="text-4xl font-outfit font-semibold">Book Business Solutions</h1>
+
+                    <h1 className="md:text-4xl text-3xl font-outfit font-semibold">Book Business Solutions</h1>
                     <form className='grid grid-cols-1 gap-5'>
-                        <input className='w-full border border-gray-400 p-5 rounded-full' type="text" placeholder='Your Name*' />
-                        <input className='w-full border border-gray-400 p-5 rounded-full' type="email" placeholder='Your Email*' />
-                        <select className='w-full border border-gray-400 p-5 rounded-full' name="" id="">
+                        <input className='w-full border border-gray-400 md:p-5 p-3 rounded-full' type="text" placeholder='Your Name*' />
+                        <input className='w-full border border-gray-400 md:p-5 p-3 rounded-full' type="email" placeholder='Your Email*' />
+                        <select className='w-full border border-gray-400 md:p-5 p-3 rounded-full' name="" id="">
                             <option value="Real Estate">Real Estate</option>
                             <option value="Apartment">Apartment</option>
                             <option value="Residential">Residential</option>
                             <option value="Deluxe">Deluxe</option>
                         </select>
 
-                        <textarea className='w-full border border-gray-400 p-5 rounded-2xl' name="" id="" placeholder='Type Your Message'></textarea>
+                        <textarea className='w-full border border-gray-400 md:p-5 p-3 rounded-2xl' name="" id="" placeholder='Type Your Message'></textarea>
 
                         <div className='flex justify-center items-center'>
                             <button className='border px-6 py-4 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all' type='submit'>Submit Message<FaRegPaperPlane /></button>
