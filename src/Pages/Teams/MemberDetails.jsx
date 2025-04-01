@@ -1,22 +1,36 @@
 import { FaRegPaperPlane } from "react-icons/fa";
 import { Helmet } from 'react-helmet'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 import { FiPhoneCall } from "react-icons/fi";
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const MemberDetails = () => {
+
+    const { teamMembers } = useContext(AuthContext)
+    console.log(teamMembers);
+
+    const paramsId = useParams()
+    console.log(paramsId.id);
+
+    const filterdMember = teamMembers.filter(member => member.id === paramsId.id);
+    console.log(filterdMember[0]);
+    const { id, name, imgUrl, designation, bio, position, experience, location, practic_area, projects_done, contact, description } = filterdMember[0];
+
+    console.log(id);
     return (
         <div className='bg-[#A4B5BA]'>
             <Helmet>
-                <title>RRE | Teams Details</title>
+                <title>Teams Details</title>
             </Helmet>
 
             {/* Navigaiton  */}
             <div className="h-86 flex justify-center items-center text-white" style={{ backgroundImage: "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/breadcumb-bg.png')" }}>
                 <div className="max-w-7xl mx-auto space-y-5">
                     <h1 className="text-5xl font-semibold  text-center">Team Details</h1>
-                    <h1 className="text-xl flex justify-center items-center gap-2"><Link to={"/"} className="hover:text-yellow-400 active:scale-95 transition-all">Home</Link> <FaArrowRight />Team Details</h1>
+                    <h1 className="text-xl flex justify-center items-center gap-2"><Link to={"/"} className="hover:text-yellow-400 active:scale-95 transition-all">Home</Link> <FaArrowRight />Team Details of {name}</h1>
                 </div>
             </div>
 
@@ -29,13 +43,13 @@ const MemberDetails = () => {
                     <div>
                         <div className="border border-gray-300 rounded-3xl overflow-hidden">
                             <div className="overflow-hidden">
-                                <img className="hover:scale-105 transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/team_2_4.png" alt="" />
+                                <img className="hover:scale-105 transition-all duration-500" src={imgUrl} alt="" />
                             </div>
 
                             <div className="p-6 space-y-2 bg-[#A4B5BA] flex justify-between items-center" >
                                 <div>
-                                    <h1 className="text-2xl font-outfit font-semibold">Michel Smith</h1>
-                                    <h1>Property Expert</h1>
+                                    <h1 className="text-2xl font-outfit font-semibold">{name}</h1>
+                                    <h1>{position}</h1>
                                 </div>
                                 <div>
                                     <FiPhoneCall className="bg-[#0D0D0C] hover:bg-yellow-400 w-12 h-12 p-3 cursor-pointer rounded-full hover:text-black text-white active:scale-95 duration-500 transition-all" />
@@ -47,7 +61,7 @@ const MemberDetails = () => {
 
                 {/* member details  */}
                 <div className='md:col-span-2 space-y-10'>
-                    <h1 className='font-outfit md:text-3xl text-2xl font-semibold'>Building lasting relationships based on trust and integrity is at the core of Scarlett Gray’s practice. He takes pride in providing exceptional service.</h1>
+                    <h1 className='font-outfit md:text-3xl text-2xl font-semibold'>{bio}</h1>
 
                     <div className="flex items-center md:flex-row flex-col md:gap-30 gap-5">
 
@@ -59,24 +73,24 @@ const MemberDetails = () => {
                                 <h1 className="font-semibold">Practice Area:</h1>
                             </div>
                             <div className="grid gap-2">
-                                <h1>Rental Property Expert</h1>
-                                <h1>15+ Years</h1>
-                                <h1>New Jersy, New York</h1>
-                                <h1>Property Seller</h1>
+                                <h1>{position}</h1>
+                                <h1>{experience}</h1>
+                                {location.map((loc,idx)=><h1 key={idx}>{loc}</h1>)}
+                                <h1>{practic_area}</h1>
                             </div>
                         </div>
                         <div className=" flex justify-between items-center gap-5">
                             <div className="grid gap-2">
                                 <h1 className="font-semibold">Project Done:</h1>
                                 <h1 className="font-semibold">Phone:</h1>
-                                <h1 className="font-semibold">Locatotion:</h1>
+                                <h1 className="font-semibold">Location:</h1>
                                 <h1 className="font-semibold">Email:</h1>
                             </div>
                             <div className="grid gap-2">
-                                <h1>200+ Property</h1>
-                                <h1>+0123- 456 789</h1>
-                                <h1>New Jersy, New York</h1>
-                                <h1>example@realar.com</h1>
+                                <h1>{projects_done}</h1>
+                                <h1>{contact.phone}</h1>    
+                                {location.map((loc,idx)=><h1 key={idx}>{loc}</h1>)}
+                                <h1>{contact.email}</h1>
                             </div>
                         </div>
                     </div>

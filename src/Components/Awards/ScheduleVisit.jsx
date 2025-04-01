@@ -26,7 +26,7 @@ const ScheduleVisit = () => {
                 </div>
 
                 <div className='lg:w-1/2'>
-                    <img src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/contact_thumb_4_1.png" alt="" />
+                    <img className="w-full" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/contact_thumb_4_1.png" alt="" />
                 </div>
 
             </div>

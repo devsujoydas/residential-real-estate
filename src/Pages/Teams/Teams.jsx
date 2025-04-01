@@ -1,11 +1,16 @@
 import { Helmet } from "react-helmet"
 import { FaArrowRight } from 'react-icons/fa'
 import { Link } from "react-router-dom"
-import Member from "../../Components/TeamMembers/Member"
 import ScheduleVisit from "../../Components/Awards/ScheduleVisit"
+import { useContext } from "react"
+import { AuthContext } from "../../AuthProvider/AuthProvider"
+import MemberPage from "./MemberPage"
 
 
 const Teams = () => {
+
+  const {teamMembers} = useContext(AuthContext)
+  console.log(teamMembers);
   return (
     <div className=" ">
       <Helmet>
@@ -24,12 +29,9 @@ const Teams = () => {
 
       {/* Teams Member  */}
       <div className="max-w-7xl mx-auto md:my-20 my-10 lg:p-0 p-5 grid md:grid-cols-3 gap-5">
-        <Member />
-        <Member />
-        <Member />
-        <Member />
-        <Member />
-        <Member />
+        {
+          teamMembers.map(tMember=><MemberPage tMember={tMember} key={tMember.id}/>)
+        }
       </div>
 
 
@@ -66,8 +68,9 @@ const Teams = () => {
         </div>
       </div>
 
-      <div className="w-full bg-white">
 
+
+      <div className="w-full bg-white">
         {/* Schedule a Visit  */}
         <div className="max-w-7xl mx-auto lg:py-20 py-10 lg:px-0 px-5 ">
           <ScheduleVisit />

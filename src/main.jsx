@@ -13,6 +13,7 @@ import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx'
 import Contact from './Pages/Contact/Contact.jsx'
 import MemberDetails from './Pages/Teams/MemberDetails.jsx'
 import BlogDetails from './Pages/Blogs/BlogDetails.jsx'
+import AuthProvider from './AuthProvider/AuthProvider.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
         element: <Teams />
       },
       {
-        path: "/memberDetails",
+        path: "/memberDetails/:id",
         element: <MemberDetails />
       },
       {
@@ -61,5 +62,7 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+  <AuthProvider>
+    <RouterProvider router={router} />
+  </AuthProvider>
 )
