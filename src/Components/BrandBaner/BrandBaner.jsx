@@ -2,7 +2,7 @@ import React from 'react'
 
 const BrandBaner = () => {
     return (
-        <div>
+        <div className='lg:block flex justify-center items-center'>
             <div className='grid grid-cols-2 md:grid-cols-6 gap-10 md:pt-10 '>
 
                 <div>

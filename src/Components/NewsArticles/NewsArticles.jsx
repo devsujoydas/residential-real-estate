@@ -9,7 +9,7 @@ import BlogNews from './BlogNews';
 
 const NewsArticles = () => {
   return (
-    <div className="bg-[#1C2D37] text-white relative">
+    <div className="bg-primary text-white relative">
       <img className="hidden lg:block absolute bg-white rounded-full left-10 top-10 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
       <img className="hidden lg:block bg-white rounded-full absolute right-10 bottom-10 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
 
@@ -22,7 +22,7 @@ const NewsArticles = () => {
             <p className='md:text-md text-sm'>Realar help you easily create a real estate trading website. With the <br />  function Register, Login, Post real estate news.</p>
           </div>
           <div>
-            <button className="border md:px-8 px-4 md:py-5 py-2 flex justify-center items-center gap-2 rounded-full  text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all">Brows All Blogs<FaArrowRight /></button>
+            <button className="btn-text-primary">Brows All Blogs<FaArrowRight /></button>
           </div>
         </div>
 

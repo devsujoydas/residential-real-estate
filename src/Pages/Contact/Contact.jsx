@@ -10,14 +10,14 @@ const Contact = () => {
 
   const contactBtnStyle = "hover:text-yellow-400 transition-all duration-500 flex items-center gap-2 text-gray-300"
   return (
-    <div className="bg-[#A4B5BA]">
+    <div className="bg-secondary">
       <Helmet>
         <title>RRE | Contact</title>
       </Helmet>
 
 
       {/* Navigaiton  */}
-      <div className="h-96 flex justify-center items-center text-white" style={{ backgroundImage: "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/breadcumb-bg.png')" }}>
+      <div className="h-86 flex justify-center items-center text-white" style={{ backgroundImage: "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/breadcumb-bg.png')" }}>
         <div className="max-w-7xl mx-auto space-y-5">
           <h1 className="text-5xl font-semibold  text-center">Contact</h1>
           <h1 className="text-xl flex justify-center items-center gap-2"><Link to={"/"} className="hover:text-yellow-400 active:scale-95 transition-all">Home</Link> <FaArrowRight />Contact </h1>

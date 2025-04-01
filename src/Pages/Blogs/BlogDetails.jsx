@@ -12,13 +12,13 @@ import { TiArrowBack } from "react-icons/ti";
 
 const BlogDetails = () => {
     return (
-        <div className='bg-[#A4B5BA]'>
+        <div className='bg-secondary'>
             <Helmet >
                 <title>RRE | Teams Details</title>
             </Helmet>
 
             {/* Navigaiton  */}
-            <div className="h-96 flex justify-center items-center text-white" style={{ backgroundImage: "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/breadcumb-bg.png')" }}>
+            <div className="h-86 flex justify-center items-center text-white" style={{ backgroundImage: "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/breadcumb-bg.png')" }}>
                 <div className="max-w-7xl mx-auto space-y-5">
                     <h1 className="lg:text-5xl text-3xl font-semibold  text-center font-outfit  ">University class starting soon while the lovely valley team work</h1>
                     <h1 className=" md:text-xl text-xs flex justify-center items-center gap-2">
@@ -45,7 +45,7 @@ const BlogDetails = () => {
                                 <h1 className="flex items-center gap-2"><MdOutlineDateRange className="font-semibold" />June 9, 2024</h1>
                                 <h1 className="flex items-center gap-2"><BsHouse className="font-semibold" />Property</h1>
                             </div>
-                            <h1 className="text-4xl  font-semibold font-outfit">Emphasizes the importance of continuous learning and intellectual</h1>
+                            <h1 className="md:text-4xl text-2xl  font-semibold font-outfit">Emphasizes the importance of continuous learning and intellectual</h1>
                             <p className="text-gray-700 mt-3">Welcome to Realar Residence, where sustainability meets comfort in every corner. In this blog post, we’ll explore the green innovations seamlessly integrated into the fabric of EcoLand, creating a unique and eco-friendly living experience for its residents.
                                 <br /> <br />
                                 A platform dedicated to exploring the transformative power of education. We believe that education is not only a means to acquire knowledge but also a catalyst for personal growth, societal progress, and global development. In this blog, we aim to inspire, inform, and engage readers in conversations about the latest trends, insights, and innovations in the field of education.
@@ -53,7 +53,7 @@ const BlogDetails = () => {
                                 Dinning: Prepare a dinner using fresh ingredients from your own garden or the local CSA program. The energy-efficient appliances in your kitchen make cooking a breeze while minimizing your overall energy consumption. Share a meal with neighbors, The quiet night offers a peaceful ambiance, reinforcing the community’s commitment to a sustainable, low-impact lifestyle.
                                 <br /> <br />
                                 Living sustainably at Realar Residence is more than a choice; it’s an immersive experience that shapes every moment of your day. From the moment you wake up in your solar-powered home to the evening gatherings with like-minded neighbors</p>
-                            <h1 className="text-4xl font-semibold font-outfit">Residence is not just a place to live it’s asustainable way of life.</h1>
+                            <h1 className="md:text-4xl text-2xl font-semibold font-outfit">Residence is not just a place to live it’s asustainable way of life.</h1>
                             <p className="text-gray-700 mt-3">Whether you work from home or commute to a nearby office, the energy-efficient features of your home contribute to a productive and eco-conscious workday. Smart home systems allow you to monitor and control energy usage, ensuring that your environmental impact remains minimal.</p>
                             <div className="rounded-2xl overflow-hidden">
                                 <img className="rounded-2xl hover:scale-110 transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/blog_inner_1.png" alt="" />
@@ -66,19 +66,21 @@ const BlogDetails = () => {
 
 
                         {/* Leave a Comment */}
-                        <div className="space-y-5"> 
+                        <div className="space-y-5">
                             <h1 className="text-4xl font-semibold font-outfit flex items-center gap-2"><TiArrowBack className="text-6xl" />Leave a Comment</h1>
                             <p>Your email address will not be published. Required fields are marked *</p>
 
                             <div>
                                 <form className="grid grid-cols-1 gap-5 ">
                                     <div className="flex gap-4">
-                                        <input type="text" placeholder="Your Name" className="border w-full p-4 rounded-2xl"/>
-                                        <input type="email" placeholder="Your Email" className="border w-full p-4 rounded-2xl"/>
+                                        <input type="text" placeholder="Your Name" className="border w-full p-4 rounded-2xl" />
+                                        <input type="email" placeholder="Your Email" className="border w-full p-4 rounded-2xl" />
                                     </div>
-                                    <input type="url" placeholder="Website" className="border w-full p-4 rounded-2xl"/>
-                                    <textarea name="" id="" placeholder="Write a Comment" className="border w-full p-4 rounded-2xl"/>
-                                    <button className="border px-6 py-4 w-fit    flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all">Post Comment<FaArrowRight /></button>
+                                    <input type="url" placeholder="Website" className="border w-full p-4 rounded-2xl" />
+                                    <textarea name="" id="" placeholder="Write a Comment" className="border w-full p-4 rounded-2xl" />
+                                    <div>
+                                        <button className="btn-text-primary">Post Comment<FaArrowRight /></button>
+                                    </div>
                                 </form>
                             </div>
 

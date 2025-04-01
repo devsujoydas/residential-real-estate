@@ -1,5 +1,6 @@
 import { FiPhoneCall } from "react-icons/fi";
 import { FaArrowRight } from 'react-icons/fa'
+import LuxuryHouses from "../LuxuryHouses/LuxuryHouses";
 const AboutUs = () => {
 
 
@@ -30,7 +31,7 @@ const AboutUs = () => {
               <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Highly professional team</h1>
               <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Dealing always on time</h1>
 
-              <button className="border px-8 py-5 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all">More About Realar<FaArrowRight /></button>
+              <button className="btn-text-primary">More About Realar<FaArrowRight /></button>
             </div>
 
 
@@ -46,35 +47,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="bg-[url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/07/award-bg-1-1.png')] bg-cover bg-no-repeat bg-center  bg-[#1C2D37] text-white ">
-        <div className="flex justify-between items-center max-w-7xl md:mx-auto md:py-25">
-
-          <div className="flex flex-col justify-center items-center gap-3">
-            <img className="hover:rotate-y-180 transition-all duration-500 h-15" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/counter-4-1.svg" alt="" />
-            <h1 className="text-4xl font-semibold ">850+</h1>
-            <h1 className="text-gray-300">ELEGANT APARTMENTS</h1>
-          </div>
-
-          <div className="flex flex-col justify-center items-center gap-3">
-            <img className="hover:rotate-y-180 transition-all duration-500 h-15" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/counter-4-2.svg" alt="" />
-            <h1 className="text-4xl font-semibold ">950+</h1>
-            <h1 className="text-gray-300">LUXURY HOUSES</h1>
-          </div>
-
-          <div className="flex flex-col justify-center items-center gap-3">
-            <img className="hover:rotate-y-180 transition-all duration-500 h-15" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/counter-4-3.svg" alt="" />
-            <h1 className="text-4xl font-semibold ">18K+</h1>
-            <h1 className="text-gray-300">SATISFIED GUESTS</h1>
-          </div>
-
-          <div className="flex flex-col justify-center items-center gap-3">
-            <img className="hover:rotate-y-180 transition-all duration-500 h-15" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/counter-4-4.svg" alt="" />
-            <h1 className="text-4xl font-semibold ">2K+</h1>
-            <h1 className="text-gray-300">HAPPY ONWERS</h1>
-          </div>
-
-        </div>
-      </div>
+      <LuxuryHouses/>
     </div>
   )
 }

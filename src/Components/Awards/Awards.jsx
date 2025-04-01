@@ -10,7 +10,7 @@ import ScheduleVisit from './ScheduleVisit';
 const Awards = () => {
   return (
     <div>
-      <div className="bg-[url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/07/award-bg-1-1.png')] bg-cover bg-no-repeat bg-center  bg-[#1C2D37] text-white ">
+      <div className="bg-[url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/07/award-bg-1-1.png')] bg-cover bg-no-repeat bg-center  bg-primary text-white ">
         <div className=" max-w-7xl md:mx-auto lg:px-0 px-5 py-10 md:py-25">
 
           {/* Section Heading  */}

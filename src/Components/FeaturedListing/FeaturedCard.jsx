@@ -40,7 +40,7 @@ const FeaturedCard = () => {
                             <h1>Sujoy Das</h1>
                         </div>
                         <div>
-                            <button className='flex justify-center  items-center md:gap-3 gap-2 border md:py-2 py-1 md:px-6 px-4 rounded-full hover:bg-[#1C2D37] hover:border-transparent hover:text-white active:scale-95 transition-all  cursor-pointer'>
+                            <button className='btn-text-primary' style={{padding:"6px 16px"}}>
                                 <p>Details </p>
                                 <FaArrowRight />
                             </button>

@@ -7,7 +7,7 @@ import ScheduleVisit from "../../Components/Awards/ScheduleVisit"
 
 const Teams = () => {
   return (
-    <div>
+    <div className=" ">
       <Helmet>
         <title>RRE | Teams</title>
       </Helmet>
@@ -34,7 +34,7 @@ const Teams = () => {
 
 
       {/* brand logos  */}
-      <div className=" bg-[#A4B5BA]">
+      <div className=" bg-secondary">
         <div className="max-w-7xl mx-auto py-10 lg:px-0 px-5 lg:py-20">
           <div className='grid grid-cols-3 md:grid-cols-6 gap-10 pt-10'>
 
@@ -66,10 +66,13 @@ const Teams = () => {
         </div>
       </div>
 
-      {/* Schedule a Visit  */}
-      <div className="max-w-7xl mx-auto lg:my-20 my-10 lg:px-0 px-5 ">
-      <ScheduleVisit/>
+      <div className="w-full bg-white">
 
+        {/* Schedule a Visit  */}
+        <div className="max-w-7xl mx-auto lg:py-20 py-10 lg:px-0 px-5 ">
+          <ScheduleVisit />
+
+        </div>
       </div>
 
     </div>

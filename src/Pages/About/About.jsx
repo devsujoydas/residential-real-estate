@@ -5,10 +5,9 @@ import { AiOutlineDollar } from "react-icons/ai";
 import { IoHome } from "react-icons/io5";
 import { TbMailDollar } from "react-icons/tb";
 
-
 const About = () => {
   return (
-    <div className="bg-[#A4B5BA] ">
+    <div className="bg-secondary ">
       <Helmet>
         <title>RRE | About</title>
       </Helmet>
@@ -54,7 +53,7 @@ const About = () => {
 
 
       {/* Why Choose Us? */}
-      <div className="bg-[#1C2D37] text-white py-5 relative">
+      <div className="bg-primary text-white py-5 relative">
 
         <img className="absolute bg-gray-400 rounded-full left-50 bottom-10  aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
         <img className="absolute bg-gray-400 rounded-full right-10 top-10 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
@@ -65,7 +64,7 @@ const About = () => {
 
           <div className="flex justify-between items-center md:flex-row flex-col">
             <h1 className="md:text-md text-sm">We are a real estate firm with over 20 years of expertise, and our main <br /> goal is to provide amazing locations to our partners and clients. Within the <br /> luxury real estate market, our agency offers customized solutions.</h1>
-            <button className="border px-6 py-4 rounded-full cursor-pointer hover:bg-gray-600 hover:text-white hover:translate-x-1 transition-all duration-300">Contact Us</button>
+            <button className="btn-text-primary">Contact Us<FaArrowRight /></button>
           </div>
 
 

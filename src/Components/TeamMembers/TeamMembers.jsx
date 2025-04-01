@@ -17,7 +17,7 @@ const TeamMembers = () => {
         <div className="flex justify-between items-center md:flex-row flex-col gap-5 ">
           <h1 className="md:text-5xl text-3xl font-semibold font-outfit">Meet The Awesome Team</h1>
 
-          <button className="border px-8 py-4 rounded-full cursor-pointer hover:bg-[#0D0D0C] hover:text-white hover:translate-x-1 transition-all duration-300 flex justify-center items-center gap-2 active:scale-95 ">View All Team<FaArrowRight /></button>
+          <button className="btn-text-primary ">View All Team<FaArrowRight /></button>
         </div>
 
 

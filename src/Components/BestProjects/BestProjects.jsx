@@ -59,7 +59,7 @@ const BestProjects = () => {
 
 
         <div className="flex justify-center items-center">
-          <button className="border md:px-8 px-4 md:py-5 py-3 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all">Brows All Project<FaArrowRight /></button>
+          <button className="btn-text-primary">Brows All Project<FaArrowRight /></button>
         </div>
 
 

@@ -4,19 +4,26 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Autoplay } from 'swiper/modules'
 import FeaturedCard from "./FeaturedCard";
+import { FaArrowRight } from "react-icons/fa";
+
 
 const FeaturedListing = () => {
   return (
     <div>
-      <div className="max-w-7xl md:mx-auto lg:px-0 px-5 lg:my-20 space-y-7">
+      <div className="max-w-7xl md:mx-auto lg:px-0 px-5 lg:my-20 ">
 
-        <h1 className="w-fit md:text-md text-sm border-t border-b py-1">Featured Listing</h1>
+        <div className='space-y-7 lg:text-left text-center'>
 
-        <h1 className="md:text-5xl text-3xl font-semibold font-outfit">Featured Listing</h1>
+          <div className='flex lg:justify-start justify-center items-center'>
+            <h1 className="w-fit md:text-md text-sm border-t border-b py-1">Featured Listing</h1>
+          </div>
 
-        <div className="flex justify-between items-center md:flex-row flex-col ">
-          <h1 className='text-sm'>Quis nulla blandit vulputate morbi adipiscing sem vestibulum. Nulla turpis integer dui <br /> sed posuere sem. Id molestie mi arcu gravida lorem potenti.</h1>
-          <button className="md:text-md text-sm border px-6 py-4 rounded-full cursor-pointer hover:bg-gray-600 hover:text-white hover:translate-x-1 transition-all duration-300">View All Properties</button>
+          <h1 className="md:text-5xl text-3xl font-semibold font-outfit">Featured Listing</h1>
+
+          <div className="flex justify-between items-center md:flex-row flex-col gap-5">
+            <h1 className='text-sm'>Quis nulla blandit vulputate morbi adipiscing sem vestibulum. Nulla turpis integer dui <br /> sed posuere sem. Id molestie mi arcu gravida lorem potenti.</h1>
+            <button className="btn-text-primary">View All Properties<FaArrowRight /></button>
+          </div>
         </div>
 
 

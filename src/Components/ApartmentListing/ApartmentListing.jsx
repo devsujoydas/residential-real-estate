@@ -13,7 +13,7 @@ const ApartmentListing = () => {
         <div className="flex justify-between items-center md:flex-row flex-col gap-5">
           <h1 className="text-5xl font-semibold font-outfit">Buy, Rent & Sell</h1>
 
-          <button className="border px-8 py-4 rounded-full cursor-pointer hover:bg-[#0D0D0C] hover:text-white hover:translate-x-1 transition-all duration-300 flex justify-center items-center gap-2 active:scale-95 ">View all Properties<FaArrowRight /></button>
+          <button className="btn-text-primary ">View all Properties<FaArrowRight /></button>
         </div>
 
 
@@ -25,7 +25,7 @@ const ApartmentListing = () => {
             </div>
             <h1 className="text-2xl font-outfit font-semibold">Buy a home</h1>
             <p className="text-gray-400 text-lg">Discover your perfect living place by looking through Homy's 2 million+ residences.</p>
-            <button className="border border-white px-8 py-4 rounded-full cursor-pointer text-white hover:translate-x-1 hover:bg-white hover:text-black active:scale-95 transition-all duration-300 flex justify-center items-center gap-2">Find Home<FaArrowRight /></button>
+            <button className="btn-text-primary border">Find Home<FaArrowRight /></button>
           </div>
 
           <div className="bg-[#0D0D0C] text-center space-y-4 text-white rounded-3xl p-8 flex flex-col justify-center items-center">
@@ -34,7 +34,7 @@ const ApartmentListing = () => {
             </div>
             <h1 className="text-2xl font-outfit font-semibold">Rent a home</h1>
             <p className="text-gray-400 text-lg">Discover your perfect living place by looking through Homy's 2 million+ residences.</p>
-            <button className="border border-white px-8 py-4 rounded-full cursor-pointer text-white hover:translate-x-1 hover:bg-white hover:text-black active:scale-95 transition-all duration-300 flex justify-center items-center gap-2">Find Home<FaArrowRight /></button>
+            <button className="btn-text-primary border">Find Home<FaArrowRight /></button>
           </div>
 
           <div className="bg-[#0D0D0C] text-center space-y-4 text-white rounded-3xl p-8 flex flex-col justify-center items-center">
@@ -43,7 +43,7 @@ const ApartmentListing = () => {
             </div>
             <h1 className="text-2xl font-outfit font-semibold">Sell a home</h1>
             <p className="text-gray-400 text-lg">Discover your perfect living place by looking through Homy's 2 million+ residences.</p>
-            <button className="border border-white px-8 py-4 rounded-full cursor-pointer text-white hover:translate-x-1 hover:bg-white hover:text-black active:scale-95 transition-all duration-300 flex justify-center items-center gap-2">Find Home<FaArrowRight /></button>
+            <button className="btn-text-primary border">Find Home<FaArrowRight /></button>
           </div>
 
         </div>

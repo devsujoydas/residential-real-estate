@@ -20,7 +20,7 @@ const ScheduleVisit = () => {
                         <textarea className='w-full border border-gray-400 md:p-5 p-2 rounded-2xl' name="" id="" placeholder='Type Your Message'></textarea>
 
                         <div className='flex justify-center items-center'>
-                            <button className='border px-6 py-4 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all' type='submit'>Submit Message<FaRegPaperPlane /></button>
+                            <button className='btn-text-primary' type='submit'>Submit Message<FaRegPaperPlane /></button>
                         </div>
                     </form>
                 </div>

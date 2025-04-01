@@ -8,7 +8,7 @@ import { MdOutlineDateRange } from "react-icons/md";
 
 const Blogs = () => {
   return (
-    <div className="bg-[#A4B5BA]">
+    <div className="bg-secondary">
       <Helmet>
         <title>RRE | Blogs</title>
       </Helmet>

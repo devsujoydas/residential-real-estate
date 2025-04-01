@@ -11,7 +11,7 @@ const Member = () => {
                     <img className="hover:scale-105 transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/team_2_4.png" alt="" />
                 </div>
 
-                <div className="p-6 space-y-2 bg-[#A4B5BA] flex justify-between items-center" >
+                <div className="p-6 space-y-2 bg-primary text-white flex justify-between items-center" >
                     <div>
                         <h1 className="text-2xl font-outfit font-semibold">Michel Smith</h1>
                         <h1>Property Expert</h1>

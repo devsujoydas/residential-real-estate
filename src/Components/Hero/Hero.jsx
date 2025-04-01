@@ -33,7 +33,7 @@ const Hero = () => {
                 "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_1.png')"
             }}
           >
-            <div className='h-[90vh] hero-bg-color w-full  flex justify-center  items-center'>
+            <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
                 <div className='flex justify-center flex-wrap items-center md:gap-10 gap-5 font-medium md:px-0 px-5'>
                   <button className={btnStyle}>
@@ -58,13 +58,13 @@ const Hero = () => {
                 </h1>
 
                 <div>
-                  <button className='px-8 py-5 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all'>
+                  <button className='btn-text-primary'>
                     <p>Request A Visit </p>
                     <FaArrowRight />
                   </button>
                 </div>
 
-                <button className='absolute bottom-10 md:text-7xl text-3xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
+                <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
                 </button>
               </div>
@@ -80,7 +80,7 @@ const Hero = () => {
                 "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_2.png')"
             }}
           >
-            <div className='h-[90vh] hero-bg-color w-full  flex justify-center  items-center'>
+            <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
                 <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-5 flex-wrap'>
                   <button className={btnStyle}>
@@ -104,13 +104,13 @@ const Hero = () => {
                 </h1>
 
                 <div>
-                  <button className='px-8 py-5 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all'>
+                  <button className='btn-text-primary'>
                     <p>Request A Visit </p>
                     <FaArrowRight />
                   </button>
                 </div>
 
-                <button className='absolute bottom-10 md:text-7xl text-3xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
+                <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
                 </button>
               </div>
@@ -126,7 +126,7 @@ const Hero = () => {
                 "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_3.png')"
             }}
           >
-            <div className='h-[90vh] hero-bg-color w-full  flex justify-center  items-center'>
+            <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
                 <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-10 flex-wrap'>
                   <button className={btnStyle}>
@@ -150,13 +150,13 @@ const Hero = () => {
                 </h1>
 
                 <div>
-                  <button className='px-8 py-5 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all'>
+                  <button className='btn-text-primary'>
                     <p>Request A Visit </p>
                     <FaArrowRight />
                   </button>
                 </div>
 
-                <button className='absolute bottom-10 md:text-7xl text-3xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
+                <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
                 </button>
               </div>

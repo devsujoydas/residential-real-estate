@@ -1,4 +1,4 @@
-import {  useState } from 'react'
+import { useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
@@ -34,7 +34,7 @@ const Header = () => {
 
 
     return (
-        <nav className='relative bg-gray-900 w-full text-white'>
+        <nav className='sticky top-0 left-0 z-20 bg-primary w-full text-white'>
             <div className='container px-6 py-4 mx-auto'>
                 <div className='lg:flex lg:items-center lg:justify-between'>
                     <div className='flex items-center justify-between'>
@@ -50,17 +50,13 @@ const Header = () => {
                                 className=' text-4xl hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none'
                                 aria-label='toggle menu'
                             >
-                                {isOpen ? (
-                                    <IoClose />
-                                ) : (
-                                    <GiHamburgerMenu />
-                                )}
+                                {isOpen ? ( <IoClose /> ) : ( <GiHamburgerMenu /> )}
                             </button>
                         </div>
                     </div>
 
                     {/* Mobile Menu */}
-                    <div className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out  lg:mt-0 lg:p-0 lg:top-0 lg:relative bg-gray-500 lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}
+                    <div className={`absolute inset-x-0 z-5 w-full px-6 py-4 transition-all duration-300 ease-in-out  lg:mt-0 lg:p-0 lg:top-0 lg:relative bg-primary lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'}`}
                     >
                         <div onClick={() => setIsOpen(!isOpen)} className='flex flex-col  -mx-6 md:gap-5 lg:flex-row lg:items-center lg:mx-8'>
                             <NavLink to={'/'} className={navBtnStyle}> Home </NavLink>
@@ -73,7 +69,7 @@ const Header = () => {
 
                         <div className='flex items-center mt-4 lg:mt-0'>
                             <button
-                                className='hidden mx-4 text-gray-600 transition-colors duration-300 transform lg:block dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none'
+                                className='hidden mx-4 bg-primary transition-colors duration-300 transform lg:block dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none'
                                 aria-label='show notifications'
                             >
                                 <svg className='w-6 h-6' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -81,12 +77,8 @@ const Header = () => {
                                 </svg>
                             </button>
 
-
-
                             <div>
-
                                 <button onClick={() => { setShowProfile(!showProfile) }} className='flex justify-center items-center gap-2 cursor-pointer'>
-
                                     <div className='overflow-hidden active:scale-95 rounded-full'>
                                         <img alt="Profile Img" src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" className=" h-12 w-12   scale-150 transition-all " />
                                     </div>
@@ -100,7 +92,6 @@ const Header = () => {
                                         <button onClick={() => { navigateProfle() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0 hover:text-black  hover:bg-gray-200 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
                                             <CgProfile />
                                             <p className="block  text-[15px]"> My Profile </p>
-
                                         </button>
 
                                         <hr className="my-2 border-blue-gray-50" tabIndex="-1" role="menuitem" />
@@ -112,10 +103,7 @@ const Header = () => {
 
                                     </ul>
                                 }
-
                             </div>
-
-
                         </div>
                     </div>
                 </div>

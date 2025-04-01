@@ -11,7 +11,7 @@ const BlogNews = () => {
                 <p>3 min read</p>
             </div>
             <p className='text-2xl font-outfit hover:underline duration-500 transition-all cursor-pointer'>University class starting soon while the lovely valley team work</p>
-            <button className="border px-8 py-4  flex justify-center items-center gap-2 rounded-full  text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all">Read More<FaArrowRight /></button>
+            <button className="btn-text-primary">Read More<FaArrowRight /></button>
         </div>
     )
 }

@@ -22,7 +22,7 @@ const Blog = () => {
                 <p className="text-gray-700 mt-3">Relar Residence promotes sustainable transportation options, with dedicated spaces. Welcome to Realar Residence, where sustainability meets comfort in every corner. In this blog post, we’ll explore the green innovations seamlessly integrated into the fabric of EcoLand, creating a unique</p>
             </div>
             <div>
-                <button className="border px-8 py-4 rounded-full cursor-pointer hover:bg-[#0D0D0C] hover:text-white hover:translate-x-1 transition-all duration-300 flex justify-center items-center gap-2 active:scale-95 ">READ MORE<FaArrowRight /></button>
+                <button className="btn-text-primary ">READ MORE<FaArrowRight /></button>
             </div>
         </div>
     )
