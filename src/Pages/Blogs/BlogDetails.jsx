@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
 import { FaArrowRight } from 'react-icons/fa'
 import { Helmet } from "react-helmet"
@@ -9,8 +9,21 @@ import { MdOutlineDateRange } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa6";
 import { BsHouse } from "react-icons/bs";
 import { TiArrowBack } from "react-icons/ti";
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const BlogDetails = () => {
+
+
+    const { blog } = useContext(AuthContext)
+    console.log(blog);
+
+    const paramsId = useParams()
+    console.log(paramsId.id);
+
+    const blogForDetails = blog.filter(blg => blg.id === paramsId.id);
+    console.log(blogForDetails);
+
     return (
         <div className='bg-secondary'>
             <Helmet >

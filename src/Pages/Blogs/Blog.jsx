@@ -3,26 +3,29 @@ import { MdOutlineDateRange } from "react-icons/md";
 import { BsHouse } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-const Blog = () => {
+const Blog = ({ blog }) => {
+    const { id, imgUrl1, title, date, category,summary,content } = blog;
+
+
     return (
         <div className="space-y-8">
             <div className="rounded-3xl overflow-hidden">
-                <Link to={"/blogDetails"}>
-                    <img className="hover:scale-110 transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/06/Untitled-1.png" alt="" />
+                <Link to={`/blogDetails/${id}`}>
+                    <img className="hover:scale-110 transition-all duration-500" src={imgUrl1}alt="" />
                 </Link>
             </div>
 
             <div className="space-y-4">
                 <div className="flex items-center gap-5">
                     <h1 className="flex items-center gap-2"><FaRegUser className="font-semibold" />Realar</h1>
-                    <h1 className="flex items-center gap-2"><MdOutlineDateRange className="font-semibold" />June 9, 2024</h1>
-                    <h1 className="flex items-center gap-2"><BsHouse className="font-semibold" />Property</h1>
+                    <h1 className="flex items-center gap-2"><MdOutlineDateRange className="font-semibold" />{date}</h1>
+                    <h1 className="flex items-center gap-2"><BsHouse className="font-semibold" />{category}</h1>
                 </div>
-                <Link to={"/blogDetails"} className="text-3xl hover:underline  transition-all duration-500 hover:font-bold font-semibold font-outfit">Emphasizes the importance of continuous learning and intellectual</Link>
-                <p className="text-gray-700 mt-3">Relar Residence promotes sustainable transportation options, with dedicated spaces. Welcome to Realar Residence, where sustainability meets comfort in every corner. In this blog post, we’ll explore the green innovations seamlessly integrated into the fabric of EcoLand, creating a unique</p>
+                <Link to={`/blogDetails/${id}`} className="text-3xl hover:underline  transition-all duration-500 hover:font-bold font-semibold font-outfit">{title}</Link>
+                <p className="text-gray-700 mt-3">{summary}{content.introduction}</p>
             </div>
             <div>
-                <button className="btn-text-primary ">READ MORE<FaArrowRight /></button>
+                <Link to={`/blogDetails/${id}`} className="btn-text-primary w-fit">READ MORE<FaArrowRight /></Link>
             </div>
         </div>
     )

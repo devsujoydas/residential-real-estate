@@ -3,18 +3,24 @@ import { createContext, useEffect, useState } from 'react'
 export const AuthContext = createContext()
 
 const AuthProvider = ({ children }) => {
-    const a = 55
+    
     const [teamMembers, setTeamMembers] = useState([])
+    const [blogs, setBlogs] = useState([])
 
     useEffect(() => {
         fetch("/TeamMembers.json")
             .then(res => res.json())
             .then(data => setTeamMembers(data))
     }, [])
+    useEffect(() => {
+        fetch("/Blogs.json")
+            .then(res => res.json())
+            .then(data => setBlogs(data))
+    }, [])
 
 
     const dataList = {
-        a,
+        blogs,
         teamMembers
     }
 
