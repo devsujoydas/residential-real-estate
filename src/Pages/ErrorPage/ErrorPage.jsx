@@ -6,10 +6,11 @@ const ErrorPage = () => {
   const navigate = useNavigate()
   return (
     <div>
-      <div className="flex justify-center items-center w-full bg-[#A4B5BA]">
+      <div className="flex justify-center items-center w-full bg-[#A4B5BA] md:flex-row flex-col-reverse">
 
-        <div className="w-full h-[100%]  flex justify-center items-center ">
-          <div className=" space-y-8">
+        <div className="w-full md:h-[100vh]  flex justify-center items-center md:flex-row flex-col">
+
+          <div className="  space-y-8 lg:p-0 p-5">
             <h1 className="text-8xl font-outfit">404</h1>
             <h1 className="text-3xl font-outfit">This page seems to have slipped <br /> through a time portal</h1>
             <h1>We appologize for any distruction to the space-time continuum. <br /> Feel free to journey back to our homepage</h1>
@@ -19,7 +20,7 @@ const ErrorPage = () => {
           </div>
         </div>
 
-        <div className="w-full h-[100vh]">
+        <div className="w-full md:h-[100vh] ">
           <img className="w-full h-full" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/error_1_1.png" alt="" />
         </div>
 
