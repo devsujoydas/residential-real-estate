@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "title": "Apartment Auckland",
+      "location": "Inner Circular Lamar Street, Houston, Texas",
+      "description": "Egestas Fringilla phasellus faucibus scelerisque eleifend donec. Porta nibh venenatis",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "size_sqm": 1690,
+      "listed_by": "Sujoy Das",
+      "homeUrl": "https://wordpress.themeholy.com/realar/wp-content/uploads/2024/07/property3-2.png",
+      "authorImg": "https://wordpress.themeholy.com/realar/wp-content/uploads/2024/07/property-user-3-1.png"
+    },
+    {
+      "id": 2,
+      "title": "Skyline Residency",
+      "location": "Downtown Avenue, Los Angeles, California",
+      "description": "Modern luxury apartment with a stunning city skyline view. Perfect for urban living.",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "size_sqm": 1450,
+      "listed_by": "John Smith",
+      "homeUrl": "https://example.com/skyline-residency",
+      "authorImg": "https://example.com/authors/john-smith.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Sunset Heights",
+      "location": "Bay Street, San Francisco, California",
+      "description": "A cozy apartment near the bay with breathtaking sunset views. Ideal for nature lovers.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "size_sqm": 1200,
+      "listed_by": "Emily Johnson",
+      "homeUrl": "https://example.com/sunset-heights",
+      "authorImg": "https://example.com/authors/emily-johnson.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Palm Grove Apartments",
+      "location": "Ocean Drive, Miami, Florida",
+      "description": "Beachfront property with a luxurious ambiance, perfect for a relaxing lifestyle.",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "size_sqm": 2500,
+      "listed_by": "Michael Brown",
+      "homeUrl": "https://example.com/palm-grove-apartments",
+      "authorImg": "https://example.com/authors/michael-brown.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Greenwood Residency",
+      "location": "Forest Lane, Seattle, Washington",
+      "description": "Nestled in a serene forest setting, this apartment offers peace and tranquility.",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "size_sqm": 1600,
+      "listed_by": "Sophia Williams",
+      "homeUrl": "https://example.com/greenwood-residency",
+      "authorImg": "https://example.com/authors/sophia-williams.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Metropolitan Towers",
+      "location": "Business Bay, New York City, New York",
+      "description": "Premium apartment with high-end finishes and top-tier amenities in the heart of NYC.",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "size_sqm": 1800,
+      "listed_by": "David Anderson",
+      "homeUrl": "https://example.com/metropolitan-towers",
+      "authorImg": "https://example.com/authors/david-anderson.jpg"
+    }
+  ]
+  

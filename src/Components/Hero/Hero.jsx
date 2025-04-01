@@ -35,7 +35,7 @@ const Hero = () => {
           >
             <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center flex-wrap items-center md:gap-10 gap-5 font-medium md:px-0 px-5'>
+                <div className='flex justify-center flex-wrap items-center md:gap-10 gap-5 font-medium md:px-0 px-6'>
                   <button className={btnStyle}>
                     <p>Sales</p>
                     <FaArrowRight />
@@ -82,7 +82,7 @@ const Hero = () => {
           >
             <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-5 flex-wrap'>
+                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-6 flex-wrap'>
                   <button className={btnStyle}>
                     <p>Sales</p>
                     <FaArrowRight />
@@ -128,7 +128,7 @@ const Hero = () => {
           >
             <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-10 flex-wrap'>
+                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-6 flex-wrap'>
                   <button className={btnStyle}>
                     <p>Sales</p>
                     <FaArrowRight />

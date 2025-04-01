@@ -40,7 +40,7 @@ const Blogs = () => {
 
 
         <div className=" col-span-1 relative">
-          <div className=" flex flex-col gap-8  ">
+          <div className=" flex flex-col gap-8 sticky top-24">
 
             {/* Search Bar  */}
             <div className="bg-primary relative p-8 rounded-2xl">
