@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link, useParams } from "react-router-dom"
 
 import { FaArrowRight } from 'react-icons/fa'
@@ -9,20 +10,33 @@ import { MdOutlineDateRange } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa6";
 import { BsHouse } from "react-icons/bs";
 import { TiArrowBack } from "react-icons/ti";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const BlogDetails = () => {
 
+    const [blg, setBlg] = useState({})
 
-    const { blog } = useContext(AuthContext)
-    console.log(blog);
+    const { blogs } = useContext(AuthContext)
+    console.log(blogs);
+
+
 
     const paramsId = useParams()
     console.log(paramsId.id);
 
-    const blogForDetails = blog.filter(blg => blg.id === paramsId.id);
-    console.log(blogForDetails);
+    const blogForDetails = blogs.filter(blog => blog.id === paramsId.id);
+    console.log(blogForDetails[0]);
+
+    const { imgUrl1, imgUrl2, title, date, category, summary, content } = blogForDetails[0];
+    const { introduction, community, about, lifestyle, real_estate_tips } = content;
+
+
+    const { author, dining, daily_living, work } = lifestyle;
+    const { tips_title1, tips_description1 } = real_estate_tips[0];
+    const { tips_title2, tips_description2 } = real_estate_tips[1];
+
+
 
     return (
         <div className='bg-secondary'>
@@ -33,7 +47,9 @@ const BlogDetails = () => {
             {/* Navigaiton  */}
             <div className="h-86 flex justify-center items-center text-white" style={{ backgroundImage: "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/breadcumb-bg.png')" }}>
                 <div className="max-w-7xl mx-auto space-y-5">
-                    <h1 className="lg:text-5xl text-3xl font-semibold  text-center font-outfit  ">University class starting soon while the lovely valley team work</h1>
+
+                    <h1 className="lg:text-5xl text-3xl font-semibold  text-center font-outfit  ">{title}</h1>
+
                     <h1 className=" md:text-xl text-xs flex justify-center items-center gap-2">
                         <Link to={"/"} className="hover:text-yellow-400 active:scale-95 transition-all">Home</Link>
                         <FaArrowRight />
@@ -48,33 +64,45 @@ const BlogDetails = () => {
                 {/* Blog Container  */}
                 <div className="lg:col-span-2 grid gap-16">
                     <div className="space-y-8">
+
                         <div className="rounded-3xl overflow-hidden">
-                            <img className="hover:scale-110 transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/06/Untitled-1.png" alt="" />
+                            <img className="hover:scale-110 transition-all duration-500" src={imgUrl1} alt="" />
                         </div>
 
                         <div className="space-y-4">
+
                             <div className="flex items-center gap-5">
                                 <h1 className="flex items-center gap-2"><FaRegUser className="font-semibold" />Realar</h1>
-                                <h1 className="flex items-center gap-2"><MdOutlineDateRange className="font-semibold" />June 9, 2024</h1>
-                                <h1 className="flex items-center gap-2"><BsHouse className="font-semibold" />Property</h1>
+
+                                <h1 className="flex items-center gap-2"><MdOutlineDateRange className="font-semibold" />{date}</h1>
+                                
+                                <h1 className="flex items-center gap-2"><BsHouse className="font-semibold" />{category}</h1>
                             </div>
-                            <h1 className="md:text-4xl text-2xl  font-semibold font-outfit">Emphasizes the importance of continuous learning and intellectual</h1>
-                            <p className="text-gray-700 mt-3">Welcome to Realar Residence, where sustainability meets comfort in every corner. In this blog post, we’ll explore the green innovations seamlessly integrated into the fabric of EcoLand, creating a unique and eco-friendly living experience for its residents.
-                                <br /> <br />
-                                A platform dedicated to exploring the transformative power of education. We believe that education is not only a means to acquire knowledge but also a catalyst for personal growth, societal progress, and global development. In this blog, we aim to inspire, inform, and engage readers in conversations about the latest trends, insights, and innovations in the field of education.
-                                <br /> <br />
-                                Dinning: Prepare a dinner using fresh ingredients from your own garden or the local CSA program. The energy-efficient appliances in your kitchen make cooking a breeze while minimizing your overall energy consumption. Share a meal with neighbors, The quiet night offers a peaceful ambiance, reinforcing the community’s commitment to a sustainable, low-impact lifestyle.
-                                <br /> <br />
-                                Living sustainably at Realar Residence is more than a choice; it’s an immersive experience that shapes every moment of your day. From the moment you wake up in your solar-powered home to the evening gatherings with like-minded neighbors</p>
-                            <h1 className="md:text-4xl text-2xl font-semibold font-outfit">Residence is not just a place to live it’s asustainable way of life.</h1>
-                            <p className="text-gray-700 mt-3">Whether you work from home or commute to a nearby office, the energy-efficient features of your home contribute to a productive and eco-conscious workday. Smart home systems allow you to monitor and control energy usage, ensuring that your environmental impact remains minimal.</p>
+
+                            <h1 className="md:text-4xl text-2xl  font-semibold font-outfit">{title}</h1>
+
+                            <p className="text-gray-700 mt-3">{introduction}</p>
+                            
+                            <p className="text-gray-700 mt-3">{about}</p>
+
+                            <p className="text-gray-700 mt-3">{community}</p>
+
+                            <p className="text-gray-700 mt-3">{dining}</p>
+
+                            <p className="text-gray-700 mt-3">{daily_living}</p>
+
+                            <h1 className="md:text-4xl text-2xl font-semibold font-outfit">{summary}</h1>
+
+                            <p className="text-gray-700 mt-3">{work}</p>
+
                             <div className="rounded-2xl overflow-hidden">
-                                <img className="rounded-2xl hover:scale-110 transition-all duration-500" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/blog_inner_1.png" alt="" />
+                                <img className="rounded-2xl hover:scale-110 transition-all duration-500" src={imgUrl2} alt="" />
                             </div>
-                            <p className="text-gray-700 mt-3">Buying a first home may be an exciting and daunting experience for those who have never done it before. This blog article serves as a thorough guide to help you through the process of buying your first house. We’re here to provide you with useful advice and insights to help you navigate every step of the home-buying process, from comprehending the financial elements to luxury about its all realar properties nuances
-                                <br /> <br />
-                                Buying a first home may be an exciting and daunting experience for those who have never done it before. This blog article serves as a thorough guide to help you through the process of buying your first house. We’re here to provide you with useful advice and insights to help you navigate every step of the home-buying process, from comprehending the financial elements to luxury about its all realar properties nuances
-                            </p>
+
+                            <p className="text-gray-700 mt-3">{tips_description1}</p>
+                            
+                            <p className="text-gray-700 mt-3">{tips_description2}</p>
+
                         </div>
 
 
