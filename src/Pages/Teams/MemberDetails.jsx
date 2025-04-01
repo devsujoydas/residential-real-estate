@@ -17,7 +17,7 @@ const MemberDetails = () => {
 
     const filterdMember = teamMembers.filter(member => member.id === paramsId.id);
     console.log(filterdMember[0]);
-    const { id, name, imgUrl, designation, bio, position, experience, location, practic_area, projects_done, contact, description } = filterdMember[0];
+    const { id, name, designation, imgUrl, bio, position, experience, location, practice_area, projects_done, contact, description } = filterdMember[0];
 
     console.log(id);
     return (
@@ -63,43 +63,54 @@ const MemberDetails = () => {
                 <div className='md:col-span-2 space-y-10'>
                     <h1 className='font-outfit md:text-3xl text-2xl font-semibold'>{bio}</h1>
 
-                    <div className="flex items-center md:flex-row flex-col md:gap-30 gap-5">
+                    <div className=" ">
 
-                        <div className=" flex justify-between items-center gap-5">
-                            <div className="grid gap-2">
+                        <div className=" space-y-3  ">
+
+                            <div className="flex items-center gap-2">
                                 <h1 className="font-semibold">Position:</h1>
+                                <h1>{designation}</h1>
+                            </div>
+
+                            <div className="flex items-center gap-2">
                                 <h1 className="font-semibold">Experience:</h1>
-                                <h1 className="font-semibold">Locatotion:</h1>
-                                <h1 className="font-semibold">Practice Area:</h1>
-                            </div>
-                            <div className="grid gap-2">
-                                <h1>{position}</h1>
                                 <h1>{experience}</h1>
-                                {location.map((loc,idx)=><h1 key={idx}>{loc}</h1>)}
-                                <h1>{practic_area}</h1>
                             </div>
-                        </div>
-                        <div className=" flex justify-between items-center gap-5">
-                            <div className="grid gap-2">
+
+                            <div className="flex items-center gap-2">
+                                <h1 className="font-semibold">Locatotion:</h1>
+                                <h1>{location}</h1>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                                <h1 className="font-semibold">Practice Area:</h1>
+                                <h1>{practice_area}</h1>
+                            </div>
+
+                            <div className="flex items-center gap-2">
                                 <h1 className="font-semibold">Project Done:</h1>
-                                <h1 className="font-semibold">Phone:</h1>
-                                <h1 className="font-semibold">Location:</h1>
-                                <h1 className="font-semibold">Email:</h1>
-                            </div>
-                            <div className="grid gap-2">
                                 <h1>{projects_done}</h1>
-                                <h1>{contact.phone}</h1>    
-                                {location.map((loc,idx)=><h1 key={idx}>{loc}</h1>)}
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                                <h1 className="font-semibold">Phone:</h1>
+                                <h1>{contact.phone}</h1>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                                <h1 className="font-semibold">Location:</h1>
+                                <h1>{location}</h1>
+                            </div>
+                            
+                            <div className="flex items-center gap-2">
+                                <h1 className="font-semibold">Email:</h1>
                                 <h1>{contact.email}</h1>
                             </div>
+
                         </div>
                     </div>
 
-                    <p className="md:text-lg text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        <br />
-                        <br />
-                        Realar rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequu ntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                    </p>
+                    <p className="md:text-lg text-sm text-gray-600">{description}</p>
 
                     <h1 className="md:text-4xl text-3xl font-outfit font-semibold">Book Business Solutions</h1>
                     <form className='grid grid-cols-1 gap-5'>
@@ -125,3 +136,10 @@ const MemberDetails = () => {
 }
 
 export default MemberDetails
+
+
+  
+// https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/blog-s-1-2.png
+// https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/blog-s-1-3.png
+// https://wordpress.themeholy.com/realar/wp-content/uploads/2024/06/Untitled-1.png
+// https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/blog_inner_1.png

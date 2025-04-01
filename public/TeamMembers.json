@@ -7,10 +7,7 @@
     "bio": "Jonathan Carter is a seasoned real estate consultant with a proven track record of helping clients find their dream homes and investment properties. He believes in fostering strong relationships through honesty, transparency, and exceptional service.",
     "position": "Luxury Property Specialist",
     "experience": "20+ Years",
-    "location": [
-      "Los Angeles",
-      "San Francisco"
-    ],
+    "location": "Los Angeles , San Francisco",
     "practice_area": "Luxury Real Estate and Property Investment",
     "projects_done": "300+ High-End Properties",
     "contact": {
@@ -27,10 +24,8 @@
     "bio": "Sophia Martinez is a dedicated real estate broker with expertise in residential and commercial property transactions. She is known for her client-focused approach and strong negotiation skills.",
     "position": "Residential & Commercial Specialist",
     "experience": "15+ Years",
-    "location": [
-      "Miami",
-      "Orlando"
-    ],
+    "location": "Miami , Orlando"
+    ,
     "practice_area": "Property Sales & Rentals",
     "projects_done": "250+ Successful Deals",
     "contact": {
@@ -47,10 +42,7 @@
     "bio": "Michael Johnson specializes in helping investors maximize their real estate portfolios. His analytical skills and market insights make him a trusted advisor in the industry.",
     "position": "Real Estate Investment Expert",
     "experience": "18+ Years",
-    "location": [
-      "New York",
-      "Chicago"
-    ],
+    "location":"New York , Chicago",
     "practice_area": "Real Estate Investments",
     "projects_done": "200+ Profitable Investments",
     "contact": {
@@ -67,10 +59,7 @@
     "bio": "Emily Roberts is an expert in high-end real estate, specializing in premium properties across major metropolitan areas. Her keen eye for luxury and client satisfaction sets her apart.",
     "position": "Luxury Real Estate Specialist",
     "experience": "12+ Years",
-    "location": [
-      "Beverly Hills",
-      "San Diego"
-    ],
+    "location": "Beverly Hills,San Diego",
     "practice_area": "Luxury Homes & Estates",
     "projects_done": "180+ Premium Properties",
     "contact": {
@@ -87,10 +76,7 @@
     "bio": "Daniel Harris focuses on commercial real estate transactions, helping businesses find the perfect space for their operations. His knowledge of market trends makes him a top industry expert.",
     "position": "Commercial Property Specialist",
     "experience": "22+ Years",
-    "location": [
-      "Houston",
-      "Dallas"
-    ],
+    "location": "Houston , Dallas",
     "practice_area": "Commercial Leasing & Sales",
     "projects_done": "350+ Business Spaces Leased/Sold",
     "contact": {
@@ -107,10 +93,7 @@
     "bio": "Olivia Bennett manages high-value real estate properties, ensuring smooth operations and maximum returns for property owners. Her management skills and market knowledge make her a top professional.",
     "position": "Property Management Expert",
     "experience": "16+ Years",
-    "location": [
-      "Seattle",
-      "Portland"
-    ],
+    "location": "Seattle , Portland",
     "practice_area": "Property Management & Rentals",
     "projects_done": "400+ Managed Properties",
     "contact": {
