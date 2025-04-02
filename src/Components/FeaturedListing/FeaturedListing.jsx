@@ -5,11 +5,17 @@ import 'swiper/css/pagination';
 import { FreeMode, Autoplay } from 'swiper/modules'
 import FeaturedCard from "./FeaturedCard";
 import { FaArrowRight } from "react-icons/fa";
+import { useContext } from 'react';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 
 const FeaturedListing = () => {
+
+  const { featuredProperties } = useContext(AuthContext)
+  console.log(featuredProperties);
+
   return (
-    <div>
+    <div id=''>
       <div className="max-w-7xl md:mx-auto lg:px-0 px-5 lg:my-20 ">
 
         <div className='space-y-7 lg:text-left text-center'>
@@ -48,19 +54,18 @@ const FeaturedListing = () => {
                 spaceBetween: 20,
               },
             }}
-            loop={true}
+            
             autoplay={{
-              delay: 1000,
+              delay: 1500,
               disableOnInteraction: false
             }}
             modules={[FreeMode, Autoplay]}
             className='awards-imgs rounded-3xl'
           >
-            <SwiperSlide><FeaturedCard /></SwiperSlide>
-            <SwiperSlide><FeaturedCard /></SwiperSlide>
-            <SwiperSlide><FeaturedCard /></SwiperSlide>
-            <SwiperSlide><FeaturedCard /></SwiperSlide>
-            <SwiperSlide><FeaturedCard /></SwiperSlide>
+            {featuredProperties.map((featuredPropertie,idx) => (
+              <SwiperSlide key={idx}><FeaturedCard featuredPropertie={featuredPropertie}/></SwiperSlide>
+
+            ))}
 
           </Swiper>
         </div>

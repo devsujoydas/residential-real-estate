@@ -1,6 +1,7 @@
 import { FiPhoneCall } from "react-icons/fi";
 import { FaArrowRight } from 'react-icons/fa'
 import LuxuryHouses from "../LuxuryHouses/LuxuryHouses";
+import { Link } from "react-router-dom";
 const AboutUs = () => {
 
 
@@ -31,7 +32,7 @@ const AboutUs = () => {
               <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Highly professional team</h1>
               <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Dealing always on time</h1>
 
-              <button className="btn-text-primary">More About Realar<FaArrowRight /></button>
+              <Link to={"/aboutus"} className="btn-text-primary">More About Realar<FaArrowRight /></Link>
             </div>
 
 

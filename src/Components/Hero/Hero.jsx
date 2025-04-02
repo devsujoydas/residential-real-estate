@@ -1,11 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { FaArrowRight } from 'react-icons/fa'
 import { BsMouse } from 'react-icons/bs'
-// Import Swiper styles
-import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import 'swiper/css'
 
 import { EffectFade, Autoplay } from 'swiper/modules'
 const Hero = () => {
@@ -35,7 +34,9 @@ const Hero = () => {
           >
             <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center flex-wrap items-center md:gap-10 gap-5 font-medium md:px-0 px-6'>
+                
+                <div className='flex justify-center flex-wrap items-center md:gap-10 gap-6 font-medium md:px-0 px-20'>
+
                   <button className={btnStyle}>
                     <p>Sales</p>
                     <FaArrowRight />
@@ -53,7 +54,7 @@ const Hero = () => {
                 </div>
 
 
-                <h1 className='md:text-7xl text-4xl font-bold font-outfit text-center'>
+                <h1 className='md:text-7xl text-4xl font-bold font-outfit md:px-0 px-20 text-center'>
                   Elevate Your Lifestyle Where <br /> Luxury Meets Comfort
                 </h1>
 
@@ -82,7 +83,7 @@ const Hero = () => {
           >
             <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-6 flex-wrap'>
+                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-20 flex-wrap'>
                   <button className={btnStyle}>
                     <p>Sales</p>
                     <FaArrowRight />
@@ -128,7 +129,7 @@ const Hero = () => {
           >
             <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-6 flex-wrap'>
+                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-20 flex-wrap'>
                   <button className={btnStyle}>
                     <p>Sales</p>
                     <FaArrowRight />

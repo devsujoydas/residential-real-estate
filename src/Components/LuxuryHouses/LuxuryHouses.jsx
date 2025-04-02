@@ -2,7 +2,7 @@
 const LuxuryHouses = () => {
     return (
         <div className="">
-            <div className="bg-[url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/07/award-bg-1-1.png')] bg-cover bg-no-repeat bg-center  bg-[#1C2D37] text-white md:py-0 py-20 md:px-0 px-5">
+            <div className="bg-[url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/07/award-bg-1-1.png')] bg-cover bg-no-repeat bg-center  bg-primary text-white md:py-0 py-20 md:px-0 px-5">
                 <div className="grid grid-cols-2 md:grid-cols-4 max-w-7xl md:mx-auto md:py-25">
 
                     <div className="flex flex-col justify-center items-center gap-3 ">

@@ -5,9 +5,15 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Autoplay } from 'swiper/modules'
 import BlogNews from './BlogNews';
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 
 const NewsArticles = () => {
+  const { blogs } = useContext(AuthContext)
+  
+
   return (
     <div className="bg-primary text-white relative">
       <img className="hidden lg:block absolute bg-white rounded-full left-10 top-10 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
@@ -22,7 +28,7 @@ const NewsArticles = () => {
             <p className='md:text-md text-sm'>Realar help you easily create a real estate trading website. With the <br />  function Register, Login, Post real estate news.</p>
           </div>
           <div>
-            <button className="btn-text-primary">Brows All Blogs<FaArrowRight /></button>
+            <Link to={"/blogs"} className="btn-text-primary">Brows All Blogs<FaArrowRight /></Link>
           </div>
         </div>
 
@@ -54,10 +60,9 @@ const NewsArticles = () => {
             modules={[FreeMode, Autoplay]}
             className='awards-imgs rounded-3xl'
           >
-            <SwiperSlide><BlogNews /></SwiperSlide>
-            <SwiperSlide><BlogNews /></SwiperSlide>
-            <SwiperSlide><BlogNews /></SwiperSlide>
-            <SwiperSlide><BlogNews /></SwiperSlide>
+             {blogs.map((blog,idx) => (
+               <SwiperSlide key={idx}><BlogNews blog={blog} /></SwiperSlide>
+            ))}
           </Swiper>
         </div>
 
