@@ -64,7 +64,6 @@ const FeaturedListing = () => {
           >
             {featuredProperties.map((featuredPropertie,idx) => (
               <SwiperSlide key={idx}><FeaturedCard featuredPropertie={featuredPropertie}/></SwiperSlide>
-
             ))}
 
           </Swiper>

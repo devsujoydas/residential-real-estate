@@ -1,41 +1,35 @@
 /* eslint-disable no-unused-vars */
-import { Link, useParams } from "react-router-dom"
 
-import { FaArrowRight } from 'react-icons/fa'
+
+import { useContext, } from "react";
 import { Helmet } from "react-helmet"
-
-import { FaRegBuilding } from "react-icons/fa";
-import { IoSearch } from "react-icons/io5";
-import { MdOutlineDateRange } from "react-icons/md";
-import { FaRegUser } from "react-icons/fa6";
 import { BsHouse } from "react-icons/bs";
+import { IoSearch } from "react-icons/io5";
+import { FaRegUser } from "react-icons/fa6";
 import { TiArrowBack } from "react-icons/ti";
-import { useContext, useEffect, useState } from "react";
+import { FaArrowRight } from 'react-icons/fa'
+import { FaRegBuilding } from "react-icons/fa";
+import { Link, useParams } from "react-router-dom"
+import { MdOutlineDateRange } from "react-icons/md";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+
 
 const BlogDetails = () => {
 
-    const [blg, setBlg] = useState({})
-
     const { blogs } = useContext(AuthContext)
-    console.log(blogs);
-
-
+    // console.log(blogs);
 
     const paramsId = useParams()
-    console.log(paramsId.id);
+    // console.log(paramsId.id);
 
     const blogForDetails = blogs.filter(blog => blog.id === paramsId.id);
-    console.log(blogForDetails[0]);
+    // console.log(blogForDetails[0]);
 
     const { imgUrl1, imgUrl2, title, date, category, summary, content } = blogForDetails[0];
     const { introduction, community, about, lifestyle, real_estate_tips } = content;
-
-
     const { author, dining, daily_living, work } = lifestyle;
     const { tips_title1, tips_description1 } = real_estate_tips[0];
     const { tips_title2, tips_description2 } = real_estate_tips[1];
-
 
 
     return (
@@ -96,7 +90,7 @@ const BlogDetails = () => {
                             <p className="text-gray-700 mt-3">{work}</p>
 
                             <div className="rounded-2xl overflow-hidden">
-                                <img className="rounded-2xl hover:scale-110 transition-all duration-500" src={imgUrl2} alt="" />
+                                <img className="rounded-2xl hover:scale-110 transition-all duration-500" src={imgUrl1} alt="" />
                             </div>
 
                             <p className="text-gray-700 mt-3">{tips_description1}</p>
@@ -110,7 +104,6 @@ const BlogDetails = () => {
                         <div className="space-y-5">
                             <h1 className="text-4xl font-semibold font-outfit flex items-center gap-2"><TiArrowBack className="text-6xl" />Leave a Comment</h1>
                             <p>Your email address will not be published. Required fields are marked *</p>
-
                             <div>
                                 <form className="grid grid-cols-1 gap-5 ">
                                     <div className="flex gap-4">
@@ -128,8 +121,6 @@ const BlogDetails = () => {
                         </div>
                     </div>
                 </div>
-
-
 
 
                 <div className="col-span-1 ">
@@ -224,7 +215,6 @@ const BlogDetails = () => {
                         <div className="bg-[#1C2D37] text-white p-8 rounded-2xl">
                             <h1 className="text-2xl font-outfit font-semibold mb-5 pb-2 border-b-2 border-gray-300 ">Popular Tag</h1>
 
-
                             <div className="flex flex-wrap gap-2">
                                 <Link className="hover:bg-yellow-400 bg-gray-700 hover:text-black px-2 py-1 rounded-sm transition-all duration-500" to={""}>Apartment</Link>
                                 <Link className="hover:bg-yellow-400 bg-gray-700 hover:text-black px-2 py-1 rounded-sm transition-all duration-500" to={""}>Buyer</Link>
@@ -235,17 +225,7 @@ const BlogDetails = () => {
                                 <Link className="hover:bg-yellow-400 bg-gray-700 hover:text-black px-2 py-1 rounded-sm transition-all duration-500" to={""}>Sale</Link>
                             </div>
 
-
-
-
-
-
-
                         </div>
-
-
-
-
                     </div>
                 </div>
             </div>

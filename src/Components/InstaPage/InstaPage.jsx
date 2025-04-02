@@ -6,10 +6,15 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Autoplay } from 'swiper/modules'
 import InstaImgs from "./InstaImgs";
+import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { useContext } from 'react';
 
 
 
 const InstaPage = () => {
+  const { featuredProperties } = useContext(AuthContext)
+  console.log(featuredProperties);
+
   return (
     <div className="relative">
       
@@ -44,12 +49,9 @@ const InstaPage = () => {
             modules={[FreeMode, Autoplay]}
             className=''
           >
-            <SwiperSlide><InstaImgs/></SwiperSlide>
-            <SwiperSlide><InstaImgs/></SwiperSlide>
-            <SwiperSlide><InstaImgs/></SwiperSlide>
-            <SwiperSlide><InstaImgs/></SwiperSlide>
-            <SwiperSlide><InstaImgs/></SwiperSlide>
-            <SwiperSlide><InstaImgs/></SwiperSlide>
+            {featuredProperties.map((featuredPropertie,idx) => (
+              <SwiperSlide key={idx}><InstaImgs featuredPropertie={featuredPropertie}/></SwiperSlide>
+            ))}
             
           </Swiper>
         </div>

@@ -64,7 +64,7 @@ const About = () => {
 
           <div className="flex justify-between items-center md:flex-row flex-col">
             <h1 className="md:text-md text-sm">We are a real estate firm with over 20 years of expertise, and our main <br /> goal is to provide amazing locations to our partners and clients. Within the <br /> luxury real estate market, our agency offers customized solutions.</h1>
-            <button className="btn-text-primary">Contact Us<FaArrowRight /></button>
+            <Link to={"/contact"} className="btn-text-primary">Contact Us<FaArrowRight /></Link>
           </div>
 
 

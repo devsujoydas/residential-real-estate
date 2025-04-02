@@ -5,8 +5,13 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Autoplay } from 'swiper/modules'
 import { FaArrowRight } from 'react-icons/fa'
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const BestProjects = () => {
+const { featuredProperties } = useContext(AuthContext)
+  console.log(featuredProperties);
+
   return (
     <div className="relative">
       <img className="absolute md:h-fit h-20 left-5 md:left-10 md:top-10 top-2 aboutus-rotator" id="" src="https://wordpress.themeholy.com/realar/wp-content/uploads/2024/05/section_shape_2_1-1.png" alt="" />
@@ -48,11 +53,9 @@ const BestProjects = () => {
             modules={[FreeMode, Autoplay]}
             className='awards-imgs'
           >
-            <SwiperSlide><Project /></SwiperSlide>
-            <SwiperSlide><Project /></SwiperSlide>
-            <SwiperSlide><Project /></SwiperSlide>
-            <SwiperSlide><Project /></SwiperSlide>
-            <SwiperSlide><Project /></SwiperSlide>
+            {featuredProperties.map((featuredPropertie,idx) => (
+              <SwiperSlide key={idx}><Project featuredPropertie={featuredPropertie}/></SwiperSlide>
+            ))}
 
           </Swiper>
         </div>

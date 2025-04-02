@@ -4,15 +4,16 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Autoplay } from 'swiper/modules'
-import Member from "./Member";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
+import MemberPage from "../../Pages/Teams/MemberPage";
 
 const TeamMembers = () => {
 
-  const { teamMembers } = useContext(AuthContext);
-  // console.log(teamMembers);
+  const { teamMembers } = useContext(AuthContext)
+  console.log(teamMembers);
+
   return (
     <div>
       <div className="max-w-7xl md:mx-auto mlgpx-0 px-5 lg:my-20 my-10 space-y-7">
@@ -51,17 +52,14 @@ const TeamMembers = () => {
             className='awards-imgs rounded-3xl'
           >
 
-            {/* {
-              teamMembers.map((teamMember) => (
-                <SwiperSlide key={teamMember.id}>
-                  <Member member={teamMember} />
-                </SwiperSlide>
-              ))
-            } */}
 
-            <SwiperSlide><Member /></SwiperSlide>
-            <SwiperSlide><Member /></SwiperSlide>
-            <SwiperSlide><Member /></SwiperSlide>
+            {/* Teams Member  */}
+            <div className="max-w-7xl mx-auto md:my-20 my-10 lg:p-0 p-5 grid md:grid-cols-3 gap-5">
+              {
+                teamMembers.map(tMember => <MemberPage tMember={tMember} key={tMember.id} />)
+              }
+            </div>
+
 
           </Swiper>
         </div>

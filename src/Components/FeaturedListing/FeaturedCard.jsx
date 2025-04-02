@@ -3,13 +3,14 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoBedOutline } from "react-icons/io5";
 import { PiBathtubLight } from "react-icons/pi";
 const FeaturedCard = ({ featuredPropertie }) => {
+    
     const { title, location, description, bedrooms, bathrooms, size_sqm, listed_by, homeUrl } = featuredPropertie;
 
     return (
         <div>
             <div className="border border-gray-300 rounded-3xl overflow-hidden">
                 <div className="overflow-hidden">
-                    <img className="hover:scale-110 transition-all duration-500" src={homeUrl} alt="" />
+                    <img className="hover:scale-110 w-full h-86 transition-all duration-500" src={homeUrl} alt="" />
                 </div>
 
                 <div className="p-6 space-y-4">
