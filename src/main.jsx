@@ -14,6 +14,8 @@ import Contact from './Pages/Contact/Contact.jsx'
 import MemberDetails from './Pages/Teams/MemberDetails.jsx'
 import BlogDetails from './Pages/Blogs/BlogDetails.jsx'
 import AuthProvider from './AuthProvider/AuthProvider.jsx'
+import ProfilePage from './Pages/ProfilePage/ProfilePage.jsx'
+import PrivateRoutes from './RootPage/PrivateRoutes.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,12 +32,16 @@ const router = createBrowserRouter([
         element: <About />
       },
       {
+        path: "/profile",
+        element: <PrivateRoutes><ProfilePage /></PrivateRoutes>
+      },
+      {
         path: "/teams",
         element: <Teams />
       },
       {
         path: "/memberDetails/:id",
-        element: <MemberDetails />
+        element: <PrivateRoutes><MemberDetails /></PrivateRoutes>
       },
       {
         path: "/blogs",
@@ -43,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/blogDetails/:id",
-        element: <BlogDetails />
+        element: <PrivateRoutes> <BlogDetails /></PrivateRoutes>
       },
       {
         path: "/contact",

@@ -12,9 +12,11 @@ const Header = () => {
     const navigate = useNavigate()
 
     const { user, signOutUser } = useContext(AuthContext)
+
     const navigateProfle = () => {
         setShowProfile(!showProfile)
         setIsOpen(!isOpen)
+        navigate('/profile')
     }
 
     const signOutHander = () => {
@@ -25,7 +27,7 @@ const Header = () => {
             .catch((error) => {
                 console.log(error.message);
             });
-        navigate("/login")
+        navigate("/signin")
         setShowProfile(!showProfile)
         setIsOpen(!isOpen)
     }
@@ -64,7 +66,9 @@ const Header = () => {
                             <NavLink to={'/teams'} className={navBtnStyle}> Team </NavLink>
                             <NavLink to={'/blogs'} className={navBtnStyle}> Blogs </NavLink>
                             <NavLink to={"/contact"} className={navBtnStyle}>Contact Us</NavLink>
-                            <NavLink to={"/signin"} className={navBtnStyle}>Sign In</NavLink>
+                            {
+                                !user && <NavLink to={"/signin"} className={navBtnStyle}>Sign In</NavLink>
+                            }
                         </div>
 
                         <div className='flex items-center mt-4 lg:mt-0'>
@@ -80,13 +84,13 @@ const Header = () => {
                             <div>
                                 <button onClick={() => { setShowProfile(!showProfile) }} className='flex justify-center items-center gap-2 cursor-pointer'>
                                     <div className='overflow-hidden active:scale-95 rounded-full'>
-                                        <img alt="Profile Img" src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" className=" h-12 w-12   scale-150 transition-all " />
+                                        <img alt="Profile Img" src={user ? user.photoURL : "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"} className=" h-12 w-12   scale-150 transition-all " />
                                     </div>
 
-                                    <h1>Hi! <span className='font-semibold'>Sujoy Das</span></h1>
+                                    <h1>Hi! <span className='font-semibold'>{user?.displayName}</span></h1>
                                 </button>
 
-                                {showProfile &&
+                                {showProfile && user && 
                                     <ul className="absolute mt-2  z-10 flex min-w-[180px]  flex-col gap-2 overflow-auto rounded-md border border-blue-gray-50 bg-gray-600 text-white p-3 font-poppins shadow-lg " >
 
                                         <button onClick={() => { navigateProfle() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0 hover:text-black  hover:bg-gray-200 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >

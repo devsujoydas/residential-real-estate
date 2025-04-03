@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet"
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { FaArrowRight } from 'react-icons/fa'
 import { useContext, useState } from "react"
 import { FaRegEye } from "react-icons/fa";
@@ -11,7 +11,7 @@ const SignUp = () => {
 
   const [showhide, setShowHide] = useState(1)
   const { signUpUser, setUser, signInWithGoogle } = useContext(AuthContext)
-
+  const location = useLocation()
   const navigate = useNavigate()
 
   const formHandler = (e) => {
