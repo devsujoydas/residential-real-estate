@@ -84,7 +84,7 @@ const Header = () => {
                             <div>
                                 <button onClick={() => { setShowProfile(!showProfile) }} className='flex justify-center items-center gap-2 cursor-pointer'>
                                     <div className='overflow-hidden active:scale-95 rounded-full'>
-                                        <img alt="Profile Img" src={user ? user.photoURL : "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"} className=" h-12 w-12   scale-150 transition-all " />
+                                        <img alt="Profile Img" src={user ? user.photoURL : "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"} className=" h-12 w-12 scale-105 transition-all " />
                                     </div>
 
                                     <h1>Hi! <span className='font-semibold'>{user?.displayName}</span></h1>

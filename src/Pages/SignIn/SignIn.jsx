@@ -23,7 +23,7 @@ const SignIn = () => {
     signInUser(email, password)
       .then((result) => {
         setUser(result.user)
-        navigate(location?.state ? location.state : "/")
+        navigate(location?.state ? location.state : "/profile")
       })
       .catch((error) => {
         console.log(error.message);
@@ -35,7 +35,7 @@ const SignIn = () => {
       .then((result) => {
         setUser(result.user)
         console.log(result.user);
-        navigate(location?.state ? location.state : "/")
+        navigate(location?.state ? location.state : "/profile")
       })
       .catch((error) => {
         console.log(error.message);

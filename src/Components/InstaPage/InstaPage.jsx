@@ -29,7 +29,7 @@ const InstaPage = () => {
             freeMode={true}
             loop={true}
             autoplay={{
-              delay: 100000,
+              delay: 1000,
               disableOnInteraction: false
             }}
             breakpoints={{

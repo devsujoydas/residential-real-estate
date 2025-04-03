@@ -56,7 +56,7 @@ const FeaturedListing = () => {
             }}
             
             autoplay={{
-              delay: 150000,
+              delay: 1500,
               disableOnInteraction: false
             }}
             modules={[FreeMode, Autoplay]}
