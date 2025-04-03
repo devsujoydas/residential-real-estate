@@ -1,57 +1,50 @@
 import { Helmet } from "react-helmet"
 import { FaArrowRight } from 'react-icons/fa'
-import { Link, useLocation } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 
 const SignIn = () => {
   const [showhide, setShowHide] = useState(1)
-  // const { logInUser, setUser, signInWithGoogle } = useContext(AuthContext)
-  const location = useLocation()
-  console.log("location in the login page", location);
+  const { signInUser, setUser, signInWithGoogle } = useContext(AuthContext)
+
+  const navigate = useNavigate()
 
   const formHandler = (e) => {
     e.preventDefault()
     const form = new FormData(e.currentTarget)
     const email = form.get("email")
     const password = form.get("password")
-    console.log(email, password);
-
-
-    // logInUser(email, password)
-    //   .then((result) => {
-    //     setUser(result.user)
-    //     notify("Account Create Successfully")
-    //     console.log(result.user);
-    //     navigate(location?.state ? location.state : "/")
-    //   })
-    //   .catch((error) => {
-    //     console.log(error.message);
-    //     notify(error.message);
-    //   });
+    signInUser(email, password)
+      .then((result) => {
+        setUser(result.user)
+        // console.log(result.user);
+        navigate(location?.state ? location.state : "/")
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
   }
 
-  // const googleSignInHandler = () => {
-  //   signInWithGoogle()
-  //     .then((result) => {
-  //       setUser(result.user)
-  //       console.log(result.user);
-  //       navigate(location?.state ? location.state : "/")
-  //     })
-  //     .catch((error) => {
-  //       console.log(error.message);
-  //     });
-  // }
-
-
-
+  const googleSignInHandler = () => {
+    signInWithGoogle()
+      .then((result) => {
+        setUser(result.user)
+        console.log(result.user);
+        navigate(location?.state ? location.state : "/")
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }
 
   return (
 
-    <div className="bg-secondary">
+    <div className="">
       <Helmet>
         <title>RRE | Sign In</title>
       </Helmet>
@@ -63,13 +56,13 @@ const SignIn = () => {
         </div>
       </div>
 
-      <section className="w-full">
+      <div className="w-full">
         <div className="mx-5 md:mx-auto md:py-14">
           <div
-            className="flex shadow-2xl border-t border-gray-200 flex-col w-full max-w-md p-10 mx-auto my-6 transition duration-500 ease-in-out transform bg-white rounded-2xl md:mt-0">
+            className="flex shadow-2xl border-t border-gray-200 flex-col w-full max-w-md p-10 mx-auto my-10 transition duration-500 ease-in-out transform bg-white rounded-2xl md:mt-0">
             <div className="mt-8">
               <h1 className="text-center text-3xl font-bold text-blue-600">Sign In</h1>
-              <div className="mt-6">
+              <div className="t-6">
 
                 <form className="space-y-6" onSubmit={formHandler}>
                   <div>
@@ -119,7 +112,7 @@ const SignIn = () => {
                   </div>
                 </div>
                 <div>
-                  <button onClick={() => {  }} className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition  ease-in-out transform border-2 border-white shadow-md rounded-xl  active:scale-95 cursor-pointer">
+                  <button onClick={() => { googleSignInHandler() }} className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition  ease-in-out transform border-2 border-white shadow-md rounded-xl  active:scale-95 cursor-pointer">
                     <div className="flex items-center justify-center">
                       <img className="w-5 h-5 mr-2"
                         src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA"
@@ -136,7 +129,7 @@ const SignIn = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

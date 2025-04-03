@@ -10,7 +10,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const BestProjects = () => {
 const { featuredProperties } = useContext(AuthContext)
-  console.log(featuredProperties);
+  // console.log(featuredProperties);
 
   return (
     <div className="relative">

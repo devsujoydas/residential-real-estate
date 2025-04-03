@@ -12,7 +12,7 @@ import MemberPage from "../../Pages/Teams/MemberPage";
 const TeamMembers = () => {
 
   const { teamMembers } = useContext(AuthContext)
-  console.log(teamMembers);
+  // console.log(teamMembers);
 
   return (
     <div>

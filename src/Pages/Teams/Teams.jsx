@@ -10,7 +10,8 @@ import MemberPage from "./MemberPage"
 const Teams = () => {
 
   const {teamMembers} = useContext(AuthContext)
-  console.log(teamMembers);
+  // console.log(teamMembers);
+  
   return (
     <div className=" ">
       <Helmet>

@@ -12,7 +12,7 @@ import { AuthContext } from '../../AuthProvider/AuthProvider';
 const FeaturedListing = () => {
 
   const { featuredProperties } = useContext(AuthContext)
-  console.log(featuredProperties);
+  // console.log(featuredProperties);
 
   return (
     <div id=''>

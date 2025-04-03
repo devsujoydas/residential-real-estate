@@ -1,34 +1,34 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
 import { FaSignOutAlt } from "react-icons/fa";
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [showProfile, setShowProfile] = useState(false)
     const navigate = useNavigate()
 
-    //   const { user, signOutUser } = useContext(AuthContext)
+    const { user, signOutUser } = useContext(AuthContext)
     const navigateProfle = () => {
-        navigate("/profile")
         setShowProfile(!showProfile)
         setIsOpen(!isOpen)
     }
 
-    //   const signOutHander = () => {
-    //     signOutUser()
-    //       .then(() => {
-    //         console.log("Sign Out Successfull");
-    //       })
-    //       .catch((error) => {
-    //         console.log(error.message);
-    //       });
-    //     navigate("/login")
-    //     setShowProfile(!showProfile)
-    //     setIsOpen(!isOpen)
-    //   }
+    const signOutHander = () => {
+        signOutUser()
+            .then(() => {
+                console.log("Sign Out Successfull");
+            })
+            .catch((error) => {
+                console.log(error.message);
+            });
+        navigate("/login")
+        setShowProfile(!showProfile)
+        setIsOpen(!isOpen)
+    }
 
     const navBtnStyle = " mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-yellow-400  dark:hover:bg-gray-700"
 
@@ -50,7 +50,7 @@ const Header = () => {
                                 className=' text-4xl hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none'
                                 aria-label='toggle menu'
                             >
-                                {isOpen ? ( <IoClose /> ) : ( <GiHamburgerMenu /> )}
+                                {isOpen ? (<IoClose />) : (<GiHamburgerMenu />)}
                             </button>
                         </div>
                     </div>
@@ -96,7 +96,7 @@ const Header = () => {
 
                                         <hr className="my-2 border-blue-gray-50" tabIndex="-1" role="menuitem" />
 
-                                        <button onClick={() => { }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0 hover:text-black hover:bg-gray-200 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
+                                        <button onClick={() => { signOutHander() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0 hover:text-black hover:bg-gray-200 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >
                                             <FaSignOutAlt />
                                             <p className=" block text-[15px]"> Sign Out </p>
                                         </button>

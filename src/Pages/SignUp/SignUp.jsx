@@ -1,52 +1,50 @@
 import { Helmet } from "react-helmet"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { FaArrowRight } from 'react-icons/fa'
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const SignUp = () => {
 
   const [showhide, setShowHide] = useState(1)
-  // const { signUpUser, setUser, signInWithGoogle } = useContext(AuthContext)
-  // const notify = (msg) => toast(msg);
-  // const navigate = useNavigate()
+  const { signUpUser, setUser, signInWithGoogle } = useContext(AuthContext)
+
+  const navigate = useNavigate()
 
   const formHandler = (e) => {
     e.preventDefault()
     const form = new FormData(e.currentTarget)
     const email = form.get("email")
     const password = form.get("password")
-    console.log(email, password);
-    // signUpUser(email, password)
-    //   .then((result) => {
-    //     setUser(result.user)
-    //     notify("Account Create Successfully")
-    //     console.log(result.user);
-    //     navigate(location?.state ? location.state : "/")
-    //   })
-    //   .catch((error) => {
-    //     console.log(error.message);
-    //     notify(error.message);
-    //   });
+    signUpUser(email, password)
+      .then((result) => {
+        setUser(result.user)
+        console.log(result.user);
+        navigate(location?.state ? location.state : "/")
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
   }
 
-  // const googleSignInHandler = () => {
-  //   signInWithGoogle()
-  //     .then((result) => {
-  //       setUser(result.user)
-  //       console.log(result.user);
-  //       navigate(location?.state ? location.state : "/")
-  //     })
-  //     .catch((error) => {
-  //       console.log(error.message);
-  //     });
-  // }
+  const googleSignInHandler = () => {
+    signInWithGoogle()
+      .then((result) => {
+        setUser(result.user)
+        console.log(result.user);
+        navigate(location?.state ? location.state : "/")
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }
 
 
   return (
-    <div className="bg-secondary">
+    <div className="">
       <Helmet>
         <title>RRE | Sign In</title>
       </Helmet>
@@ -65,7 +63,7 @@ const SignUp = () => {
           <div
             className="flex shadow-2xl border-t border-gray-200 flex-col w-full max-w-md p-10 mx-auto my-6 transition duration-500 ease-in-out transform bg-white rounded-2xl md:mt-0">
 
-              
+
             <div className="lg:mt-4">
               <h1 className="text-center text-3xl font-bold text-blue-600">Sign Up</h1>
               <div className="mt-6">
@@ -123,7 +121,7 @@ const SignUp = () => {
                   </div>
                 </div>
                 <div>
-                  <button onClick={() => {  }}
+                  <button onClick={() => { googleSignInHandler() }}
                     className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition  ease-in-out transform border-2 border-white shadow-md rounded-xl  active:scale-95 cursor-pointer">
                     <div className="flex items-center justify-center">
                       <img className="w-5 h-5 mr-2"
@@ -135,7 +133,7 @@ const SignUp = () => {
                 </div>
               </div>
               <div className="mt-4 text-sm text-gray-600 text-center">
-                <p>Already have an account? <Link to={"/login"} className="font-semibold hover:underline transition-all hover:text-blue-600">Log In</Link>
+                <p>Already have an account? <Link to={"/signin"} className="font-semibold hover:underline transition-all hover:text-blue-600">Log In</Link>
                 </p>
               </div>
             </div>

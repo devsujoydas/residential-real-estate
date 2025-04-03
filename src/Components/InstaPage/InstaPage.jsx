@@ -13,7 +13,7 @@ import { useContext } from 'react';
 
 const InstaPage = () => {
   const { featuredProperties } = useContext(AuthContext)
-  console.log(featuredProperties);
+  // console.log(featuredProperties);
 
   return (
     <div className="relative">
