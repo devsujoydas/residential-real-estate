@@ -85,12 +85,12 @@ const Footer = () => {
 
       <div className="bg-secondary md:px-0 px-5">
         <div className=" py-5 flex justify-between items-center md:flex-row flex-col gap-2 max-w-7xl mx-auto">
-          <h1>&copy;  2025 By <a href="www.facebook.com/devsujoy36" className="font-semibold">Sujoy Das</a>. All Rights Reserved.</h1>
+          <h1>&copy;  2025 By <Link to={"https://www.facebook.com/sujoydas36"} className="font-semibold">Sujoy Das</Link>. All Rights Reserved.</h1>
           <div className="flex gap-4">
-            <Link to={"/"}> <FaFacebookF className={socialBtnStyle} /></Link>
-            <Link to={"/"}><FaYoutube className={socialBtnStyle} /></Link>
-            <Link to={"/"}><FiGithub className={socialBtnStyle} /></Link>
-            <Link to={"/"}><FaInstagram className={socialBtnStyle} /></Link>
+            <Link to={"https://www.facebook.com/sujoydas36"}> <FaFacebookF className={socialBtnStyle} /></Link>
+            <Link to={"https://www.youtube.com/@techuniverseai36"}><FaYoutube className={socialBtnStyle} /></Link>
+            <Link to={"https://github.com/devsujoy36"}><FiGithub className={socialBtnStyle} /></Link>
+            <Link to={"https://www.instagram.com/sdsujoy920243"}><FaInstagram className={socialBtnStyle} /></Link>
           </div>
         </div>
       </div>

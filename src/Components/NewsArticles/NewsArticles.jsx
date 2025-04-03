@@ -40,7 +40,7 @@ const NewsArticles = () => {
             freeMode={true}
             loop={true}
             autoplay={{
-              delay: 1000,
+              delay: 100000,
               disableOnInteraction: false
             }}
             breakpoints={{
