@@ -1,6 +1,6 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
 import { FaArrowRight } from 'react-icons/fa'
 import { BsMouse } from 'react-icons/bs'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/effect-fade'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -64,6 +64,10 @@ const Hero = () => {
                     <FaArrowRight />
                   </button>
                 </div>
+
+
+
+                
 
                 <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
