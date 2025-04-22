@@ -3,6 +3,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
+import { FaUser } from "react-icons/fa";
 import { FaSignOutAlt } from "react-icons/fa";
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 
@@ -84,13 +85,19 @@ const Header = () => {
                             <div>
                                 <button onClick={() => { setShowProfile(!showProfile) }} className='flex justify-center items-center gap-2 cursor-pointer'>
                                     <div className='overflow-hidden active:scale-95 rounded-full'>
-                                        <img alt="Profile Img" src={user ? user.photoURL : "https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"} className=" h-12 w-12 scale-105 transition-all " />
+                                        {user ?
+                                            <img alt="Profile Img" src={user.photoURL} className=" h-12 w-12 scale-105 transition-all " />
+                                            :
+                                            <div>
+                                                <FaUser className='text-3xl' />
+                                            </div>
+                                        }
                                     </div>
 
                                     <h1>Hi! <span className='font-semibold'>{user?.displayName}</span></h1>
                                 </button>
 
-                                {showProfile && user && 
+                                {showProfile && user &&
                                     <ul className="absolute mt-2  z-10 flex min-w-[180px]  flex-col gap-2 overflow-auto rounded-md border border-blue-gray-50 bg-gray-600 text-white p-3 font-poppins shadow-lg " >
 
                                         <button onClick={() => { navigateProfle() }} className="py-2 cursor-pointer active:scale-95  rounded-md lg:mt-0 hover:text-black  hover:bg-gray-200 dark:hover:bg-gray-700 text-xl flex justify-center items-center gap-2 transition-all" >

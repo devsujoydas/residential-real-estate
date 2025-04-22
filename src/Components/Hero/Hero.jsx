@@ -65,11 +65,7 @@ const Hero = () => {
                   </button>
                 </div>
 
-
-
-                
-
-                <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
+                <button href='#featuredlist' className='absolute bottom-10 text-5xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
                 </button>
               </div>
@@ -115,7 +111,7 @@ const Hero = () => {
                   </button>
                 </div>
 
-                <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
+                <button href='#featuredlist' className='absolute bottom-10 text-5xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
                 </button>
               </div>
@@ -161,9 +157,9 @@ const Hero = () => {
                   </button>
                 </div>
 
-                <button className='absolute bottom-10 text-7xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
+                <a href='#featuredlist' className='absolute bottom-10 text-5xl opacity-40 pt-10 cursor-pointer active:scale-95 transition-all hover:opacity-55'>
                   <BsMouse />
-                </button>
+                </a>
               </div>
             </div>
           </div>
