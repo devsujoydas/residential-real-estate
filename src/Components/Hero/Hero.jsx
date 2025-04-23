@@ -12,7 +12,7 @@ const Hero = () => {
     'flex justify-center items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-4 rounded-full hover:bg-white hover:text-black transition-all active:scale-95 cursor-pointer'
 
   return (
-    <div className='h-[95vh]'>
+    <div className='mb-5'>
       <Swiper
         spaceBetween={30}
         effect={'fade'}
@@ -32,7 +32,7 @@ const Hero = () => {
                 "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_1.png')"
             }}
           >
-            <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
+            <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
                 
                 <div className='flex justify-center flex-wrap items-center md:gap-10 gap-6 font-medium md:px-0 px-20'>
@@ -81,7 +81,7 @@ const Hero = () => {
                 "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_2.png')"
             }}
           >
-            <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
+            <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
                 <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-20 flex-wrap'>
                   <button className={btnStyle}>
@@ -127,7 +127,7 @@ const Hero = () => {
                 "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_3.png')"
             }}
           >
-            <div className='md:h-[90vh] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
+            <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
                 <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-20 flex-wrap'>
                   <button className={btnStyle}>
