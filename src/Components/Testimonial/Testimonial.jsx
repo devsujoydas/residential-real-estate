@@ -14,7 +14,7 @@ const Testimonial = () => {
         {/* Section Heading  */}
         <div className=" flex-col space-y-5">
           <h1 className=" w-fit border-t border-b py-1">Testimonial</h1>
-          <h1 className=" text-5xl font-semibold font-outfit">What Our Customers Says</h1>
+          <h1 className=" md:text-5xl text-3xl font-semibold font-outfit">What Our Customers Says</h1>
         </div>
 
          {/* slider  */}
@@ -22,8 +22,7 @@ const Testimonial = () => {
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
-            freeMode={true}
-            loop={true}
+            freeMode={true} 
             autoplay={{
               delay: 1000,
               disableOnInteraction: false

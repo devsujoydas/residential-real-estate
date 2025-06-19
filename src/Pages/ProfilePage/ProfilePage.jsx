@@ -3,13 +3,13 @@ import { AuthContext } from '../../AuthProvider/AuthProvider'
 import { Link, useNavigate } from 'react-router-dom'
 import { updateProfile } from 'firebase/auth'
 import auth from '../../Firebase/firebase.config'
-import blankProfile from '../../../public/assets/blankProfile.png'
+import blankProfile from '/assets/blankProfile.png'
 import { Helmet } from 'react-helmet'
 import { FaArrowRight } from 'react-icons/fa'
 
 const ProfilePage = () => {
 
-    const { user,signOutUser, deleteAccount } = useContext(AuthContext)
+    const { user, signOutUser, deleteAccount } = useContext(AuthContext)
     const [profileError, setProfileError] = useState()
     const [success, setSuccess] = useState()
     const [updateForm, setUpdateForm] = useState(false)
@@ -61,14 +61,14 @@ const ProfilePage = () => {
                 </div>
             </div>
 
-            <div className='max-w-7xl mx-auto py-20 lg:text-2xl font-baloo-2 '>
-                <div className=" mx-10">
+            <div className='max-w-7xl mx-auto md:py-20 py-10 lg:text-2xl font-baloo-2 '>
+                <div className=" md:mx-10 mx-5">
 
                     <div className="flex md:items-start gap-10 flex-col md:flex-row">
                         <div className="grid gap-8 lg:w-2/3  ">
-                            <figure className="border shadow-xl py-6 px-2 max-h-35 flex items-center gap-3  rounded-full ">
-                                <img className="w-28 h-28 border rounded-full" src={user?.photoURL ? user?.photoURL : blankProfile} alt="" />
-                                <h1 className="font-medium text-3xl">{user?.displayName}</h1>
+                            <figure className="border shadow-xl p-2 max-h-35 flex items-center gap-3  rounded-full ">
+                                <img className="md:w-28 w-20  md:h-28 h-20  border rounded-full" src={user?.photoURL ? user?.photoURL : blankProfile} alt="" />
+                                <h1 className="font-medium md:text-3xl text-xl">{user?.displayName}</h1>
                             </figure>
                             <div className="md:mx-10 grid gap-3">
                                 <h1><span className="font-medium">Email: </span>{user?.email}</h1>
@@ -88,10 +88,13 @@ const ProfilePage = () => {
                                 <h1><span className="font-medium">Last Sign in Time: </span>{user?.metadata.lastSignInTime}</h1>
                                 <div className='flex justify-between items-center'>
                                     <div>
-                                        <button className="btn-text-primary"  onClick={()=>signOutUser()} style={{ padding: "10px 60px", width: "100%", marginTop: "20px" }}>Sign Out</button>
+                                        <button
+                                            onClick={() => signOutUser()}
+                                            className="btn-text-primary "
+                                        >Sign Out</button>
                                     </div>
                                     <div>
-                                        <button className="border-2 md:px-4 px-2 rounded-full cursor-pointer text-white bg-red-500 md:py-2 py-1 md:text-xl mt-3 active:scale-95 hover:bg-transparent hover:text-orange-500 transition-all" onClick={handleDeleteUser}>Delete Account</button>
+                                        <button className="btn-text-primary" onClick={handleDeleteUser}>Delete Account</button>
                                     </div>
                                 </div>
                             </div>
@@ -105,22 +108,22 @@ const ProfilePage = () => {
                                     <button className="border-2 text-white bg-orange-500 px-4 py-2 rounded-full hover:px-8 active:scale-95 transition-all">Click for Update Your Profile</button>
                                 </div>
                                 :
-                                <div className=" border lg:p-10 p-5 rounded-xl">
+                                <div className=" border lg:p-5 md:p-5 p-4 rounded-xl">
                                     <form onSubmit={hangleSubmit}>
                                         <h1 className="md:text-4xl text-2xl font-bold mb-5">Update Profile</h1>
 
-                                        <div className="flex flex-col gap-1 text-gray-500 text-lg">
+                                        <div className="flex flex-col gap-1 text-gray-500 md:text-lg">
 
-                                            <label htmlFor="" className="text-xl font-medium">Name and Surname</label>
-                                            <input type="text" name="name" placeholder="Enter your name and surname" className="px-4 py-3 rounded-md border-2 " />
+                                            <label htmlFor="" className="md:text-xl font-medium">Name and Surname</label>
+                                            <input defaultValue={user?.displayName} type="text" name="name" placeholder="Enter your name and surname" className="md:px-4 px-3 py-2 rounded-md border-2 " />
 
-                                            <label htmlFor="" className="text-xl font-medium">Photo URL</label>
-                                            <input type="text" name="photourl" placeholder="Enter your photo url" className="px-4 py-3 rounded-md border-2 " />
+                                            <label htmlFor="" className="md:text-xl font-medium">Photo URL</label>
+                                            <input defaultValue={user?.photoURL} type="text" name="photourl" placeholder="Enter your photo url" className="md:px-4 px-3 py-2 rounded-md border-2 " />
 
 
                                             <div className="flex mt-2 justify-start items-center gap-1">
                                                 <input id="checkbox" type="checkbox" required />
-                                                <label htmlFor="checkbox">I agree with <a href="" className="text-orange-400">Terms</a>  and <a href="" className="text-orange-400">Privacy</a></label>
+                                                <label htmlFor="checkbox">I agree with <a href="" className="text-black">Terms</a>  and <a href="" className="text-black">Privacy</a></label>
                                             </div>
                                         </div>
                                         <div className="text-center mb-2">

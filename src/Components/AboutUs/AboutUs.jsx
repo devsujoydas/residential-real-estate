@@ -20,7 +20,7 @@ const AboutUs = () => {
         <div className=" w-full relative space-y-6">
           <h1 className="w-fit border-t border-b py-1">About Us</h1>
 
-          <h1 className="text-5xl font-semibold font-outfit">Welcome to Realar</h1>
+          <h1 className="md:text-5xl text-3xl font-semibold font-outfit">Welcome to Realar</h1>
 
           <h1 className="text-lg text-gray-600">Quis nulla blandit vulputate morbi adipiscing sem vestibulum. Nulla turpis integer dui sed posuere sem. Id molestie mi arcu gravida lorem potenti.</h1>
 

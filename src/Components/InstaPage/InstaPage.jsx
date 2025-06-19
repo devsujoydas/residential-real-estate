@@ -27,7 +27,6 @@ const InstaPage = () => {
             slidesPerView={1}
             spaceBetween={20}
             freeMode={true}
-            loop={true}
             autoplay={{
               delay: 1000,
               disableOnInteraction: false

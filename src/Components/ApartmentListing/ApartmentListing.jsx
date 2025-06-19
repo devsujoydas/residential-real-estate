@@ -11,7 +11,7 @@ const ApartmentListing = () => {
         <h1 className="w-fit border-t border-b py-1">More than 745K apartment listing</h1>
 
         <div className="flex justify-between items-center md:flex-row flex-col gap-5">
-          <h1 className="text-5xl font-semibold font-outfit">Buy, Rent & Sell</h1>
+          <h1 className="md:text-5xl text-3xl font-semibold font-outfit">Buy, Rent & Sell</h1>
 
           <button className="btn-text-primary ">View all Properties<FaArrowRight /></button>
         </div>

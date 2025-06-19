@@ -16,7 +16,7 @@ const Awards = () => {
           {/* Section Heading  */}
           <div className="flex justify-center items-center flex-col space-y-5">
             <h1 className=" border-t border-b py-1">Awards</h1>
-            <h1 className=" text-5xl font-semibold font-outfit">Our Recognition & Awards</h1>
+            <h1 className=" md:text-5xl text-3xl font-semibold font-outfit">Our Recognition & Awards</h1>
           </div>
 
           {/* Award img slider  */}
@@ -24,8 +24,7 @@ const Awards = () => {
             <Swiper
               slidesPerView={3}
               spaceBetween={10}
-              freeMode={true}
-              loop={true}
+              freeMode={true} 
               autoplay={{
                 delay: 1000,
                 disableOnInteraction: false

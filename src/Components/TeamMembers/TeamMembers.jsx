@@ -24,14 +24,13 @@ const TeamMembers = () => {
         </div>
 
         {/* slider  */}
-        <div className='lg:my-16 my-10'>
+        <div className='lg:my-16 my-5'>
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
-            freeMode={true}
-            loop={true}
+            freeMode={true} 
             autoplay={{
-              delay: 1000,
+              delay: 1500,
               disableOnInteraction: false
             }}
             breakpoints={{
@@ -49,12 +48,12 @@ const TeamMembers = () => {
               },
             }}
             modules={[FreeMode, Autoplay]}
-            className='awards-imgs rounded-3xl'
+            className='awards-imgs '
           >
 
 
             {/* Teams Member  */}
-            <div className="max-w-7xl mx-auto md:my-20 my-10 lg:p-0 p-5 grid md:grid-cols-3 gap-5">
+            <div className="max-w-7xl mx-auto lg:p-0  grid md:grid-cols-3 grid-cols-2 gap-5">
               {
                 teamMembers.map(tMember => <MemberPage tMember={tMember} key={tMember.id} />)
               }

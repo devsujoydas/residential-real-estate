@@ -9,7 +9,7 @@ import 'swiper/css'
 import { EffectFade, Autoplay } from 'swiper/modules'
 const Hero = () => {
   const btnStyle =
-    'flex justify-center items-center md:gap-5 gap-2 border md:py-4 py-2 md:px-6 px-4 rounded-full hover:bg-white hover:text-black transition-all active:scale-95 cursor-pointer'
+    'flex justify-center items-center md:gap-5 gap-1 border md:py-4 py-1 md:px-6 px-2 rounded-full hover:bg-white hover:text-black transition-all active:scale-95 cursor-pointer'
 
   return (
     <div className='mb-5'>
@@ -34,23 +34,11 @@ const Hero = () => {
           >
             <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                
-                <div className='flex justify-center flex-wrap items-center md:gap-10 gap-6 font-medium md:px-0 px-20'>
 
-                  <button className={btnStyle}>
-                    <p>Sales</p>
-                    <FaArrowRight />
-                  </button>
-
-                  <button className={btnStyle}>
-                    <p>Rentals</p>
-                    <FaArrowRight />
-                  </button>
-
-                  <button className={btnStyle}>
-                    <p>Commercial</p>
-                    <FaArrowRight />
-                  </button>
+                <div className='flex justify-center items-center md:gap-10 gap-2 font-medium md:px-0 px-20'>
+                  <button className={btnStyle}><p>Sales</p><FaArrowRight /></button>
+                  <button className={btnStyle}><p>Rentals</p><FaArrowRight /></button>
+                  <button className={btnStyle}><p>Commercial</p><FaArrowRight /></button>
                 </div>
 
 
@@ -83,24 +71,13 @@ const Hero = () => {
           >
             <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-20 flex-wrap'>
-                  <button className={btnStyle}>
-                    <p>Sales</p>
-                    <FaArrowRight />
-                  </button>
-
-                  <button className={btnStyle}>
-                    <p>Rentals</p>
-                    <FaArrowRight />
-                  </button>
-
-                  <button className={btnStyle}>
-                    <p>Commercial</p>
-                    <FaArrowRight />
-                  </button>
+                <div className='flex justify-center items-center md:gap-10 gap-2 font-medium md:px-0 px-20'>
+                  <button className={btnStyle}><p>Sales</p><FaArrowRight /></button>
+                  <button className={btnStyle}><p>Rentals</p><FaArrowRight /></button>
+                  <button className={btnStyle}><p>Commercial</p><FaArrowRight /></button>
                 </div>
 
-                <h1 className='md:text-7xl text-4xl font-bold font-outfit text-center'>
+                <h1 className='md:text-7xl text-4xl font-bold text-wrap  md:px-0 px-20 font-outfit text-center'>
                   Discover Your Comfortable <br /> & Flexible Living House
                 </h1>
 
@@ -129,24 +106,14 @@ const Hero = () => {
           >
             <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
               <div className='flex space-y-16 flex-col justify-center items-center '>
-                <div className='flex justify-center items-center md:gap-10 gap-5 font-medium md:px-0 px-20 flex-wrap'>
-                  <button className={btnStyle}>
-                    <p>Sales</p>
-                    <FaArrowRight />
-                  </button>
 
-                  <button className={btnStyle}>
-                    <p>Rentals</p>
-                    <FaArrowRight />
-                  </button>
-
-                  <button className={btnStyle}>
-                    <p>Commercial</p>
-                    <FaArrowRight />
-                  </button>
+                <div className='flex justify-center items-center md:gap-10 gap-2 font-medium md:px-0 px-20'>
+                  <button className={btnStyle}><p>Sales</p><FaArrowRight /></button>
+                  <button className={btnStyle}><p>Rentals</p><FaArrowRight /></button>
+                  <button className={btnStyle}><p>Commercial</p><FaArrowRight /></button>
                 </div>
 
-                <h1 className='md:text-7xl text-4xl font-bold font-outfit text-center'>
+                <h1 className='md:text-7xl text-4xl md:px-0 px-10 font-bold font-outfit text-center'>
                   Experience The Harmonious <br /> Blend Of Luxury
                 </h1>
 

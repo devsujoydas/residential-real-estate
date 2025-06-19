@@ -2,6 +2,7 @@
 import { createUserWithEmailAndPassword, deleteUser, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth'
 import { createContext, useEffect, useState } from 'react'
 import auth from '../Firebase/firebase.config'
+import Swal from 'sweetalert2'
 
 export const AuthContext = createContext()
 
@@ -15,18 +16,19 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState()
 
     useEffect(() => {
-        fetch("/TeamMembers.json")
+        fetch("https://residential-real-estate-server.vercel.app/TeamMembers")
             .then(res => res.json())
             .then(data => setTeamMembers(data))
     }, [])
+
     useEffect(() => {
-        fetch("/Blogs.json")
+        fetch("https://residential-real-estate-server.vercel.app/Blogs")
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
 
     useEffect(() => {
-        fetch("/FeaturedProperties.json")
+        fetch("https://residential-real-estate-server.vercel.app/FeaturedProperties")
             .then(res => res.json())
             .then(data => setFeaturedProperties(data))
     }, [])
@@ -49,12 +51,48 @@ const AuthProvider = ({ children }) => {
     }
 
     const signOutUser = () => {
-        setLoading(true)
-        return signOut(auth)
+        Swal.fire({
+            title: "Are you sure to sign out?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Sign Out!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                setLoading(true)
+                signOut(auth)
+                Swal.fire({
+                    title: "Sign Out Successfully!",
+                    text: "Your has been Sign Out Successfully.",
+                    icon: "success"
+                });
+            }
+        });
+
     }
 
     const deleteAccount = () => {
-        return deleteUser(user)
+
+        Swal.fire({
+            title: "Are you sure to Delete Account?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Delete!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                deleteUser(user)
+                Swal.fire({
+                    title: "Account Delete Successfully!",
+                    text: "Your has been Deleted Account Successfully.",
+                    icon: "success"
+                });
+            }
+        });
     }
 
     useEffect(() => {

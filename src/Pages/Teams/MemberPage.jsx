@@ -8,20 +8,18 @@ const MemberPage = ({ tMember }) => {
     const navigate = useNavigate()
 
     return (
-        <div>
-            <div onClick={()=>{navigate(`/memberDetails/${id}`)   }} className="border border-gray-300 rounded-3xl overflow-hidden">
-                <div className="overflow-hidden">
-                    <img className="hover:scale-105 transition-all duration-500" src={imgUrl} alt="" />
-                </div>
+        <div onClick={() => { navigate(`/memberDetails/${id}`) }} className="md:rounded-2xl rounded-md overflow-hidden">
+            <div className="overflow-hidden">
+                <img className="hover:scale-105 transition-all duration-500" src={imgUrl} alt="" />
+            </div>
 
-                <div className="p-6 space-y-2 bg-primary text-white flex justify-between items-center" >
-                    <div>
-                        <h1 className="text-2xl font-outfit font-semibold">{name}</h1>
-                        <h1>{position}</h1>
-                    </div>
-                    <div>
-                        <FiPhoneCall className="bg-[#0D0D0C] hover:bg-yellow-400 w-12 h-12 p-3 cursor-pointer rounded-full hover:text-black text-white active:scale-95 duration-500 transition-all" />
-                    </div>
+            <div className="md:p-6 p-3 space-y-2 bg-primary text-white flex justify-between md:flex-row flex-col items-center" >
+                <div>
+                    <h1 className="md:text-2xl font-outfit font-semibold">{name}</h1>
+                    <h1 className="md:text-lg text-xs">{position}</h1>
+                </div>
+                <div className="md:block hidden">
+                    <FiPhoneCall className="bg-[#0D0D0C] hover:bg-yellow-400 md:w-12 w-10 md:h-12 h-10 md:p-3 p-2 cursor-pointer rounded-full hover:text-black text-white active:scale-95 duration-500 transition-all" />
                 </div>
             </div>
         </div>

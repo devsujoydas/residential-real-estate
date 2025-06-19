@@ -10,16 +10,10 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 const MemberDetails = () => {
 
     const { teamMembers } = useContext(AuthContext)
-    console.log(teamMembers);
-
     const paramsId = useParams()
-    console.log(paramsId.id);
-
     const filterdMember = teamMembers.filter(member => member.id === paramsId.id);
-    console.log(filterdMember[0]);
     const { id, name, designation, imgUrl, bio, position, experience, location, practice_area, projects_done, contact, description } = filterdMember[0];
-
-    console.log(id);
+ 
     return (
         <div className='bg-[#A4B5BA]'>
             <Helmet>
@@ -126,7 +120,7 @@ const MemberDetails = () => {
                         <textarea className='w-full border border-gray-400 md:p-5 p-3 rounded-2xl' name="" id="" placeholder='Type Your Message'></textarea>
 
                         <div className='flex justify-center items-center'>
-                            <button className='border px-6 py-4 flex justify-center items-center gap-2 rounded-full bg-black text-white  hover:bg-white hover:text-black cursor-pointer active:scale-95 transition-all' type='submit'>Submit Message<FaRegPaperPlane /></button>
+                            <button className='btn-text-primary' type='submit'>Submit Message<FaRegPaperPlane /></button>
                         </div>
                     </form>
                 </div>
@@ -136,10 +130,4 @@ const MemberDetails = () => {
 }
 
 export default MemberDetails
-
-
-  
-// https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/blog-s-1-2.png
-// https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/blog-s-1-3.png
-// https://wordpress.themeholy.com/realar/wp-content/uploads/2024/06/Untitled-1.png
-// https://wordpress.themeholy.com/realar/wp-content/uploads/2024/04/blog_inner_1.png
+ 

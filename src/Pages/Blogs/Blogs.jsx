@@ -12,7 +12,7 @@ const Blogs = () => {
 
 
   const { blogs } = useContext(AuthContext)
-  console.log(blogs);
+  // console.log(blogs);
 
   return (
     <div className="bg-secondary">
