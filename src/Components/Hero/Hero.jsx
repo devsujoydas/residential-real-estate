@@ -29,7 +29,7 @@ const Hero = () => {
             className=' text-white bg-no-repeat bg-cover'
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                "url('https://images.pexels.com/photos/7534561/pexels-photo-7534561.jpeg')"
             }}
           >
             <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
@@ -43,7 +43,7 @@ const Hero = () => {
 
 
                 <h1 className='md:text-7xl text-4xl font-bold font-outfit md:px-0 px-20 text-center'>
-                 Savor the harmonious <br /> union of luxury
+                 Uncover the comfort and <br className='md:block hidden'/> flexibility of your dream home.
                 </h1>
 
                 <div>
@@ -66,7 +66,7 @@ const Hero = () => {
             className=' text-white bg-no-repeat bg-cover'
             style={{
               backgroundImage:
-                "url('https://plus.unsplash.com/premium_photo-1661929519129-7a76946c1d38?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                "url('https://images.pexels.com/photos/6538934/pexels-photo-6538934.jpeg')"
             }}
           >
             <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
@@ -78,7 +78,7 @@ const Hero = () => {
                 </div>
 
                 <h1 className='md:text-7xl text-4xl font-bold text-wrap  md:px-0 px-20 font-outfit text-center'>
-                  Experience luxury, perfectly harmonized
+                  Find your ideal home comfortable, <br className='md:block hidden'/> flexible, and uniquely yours
                 </h1>
 
                 <div>
@@ -101,7 +101,7 @@ const Hero = () => {
             className=' text-white bg-no-repeat bg-cover'
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+                "url('https://images.pexels.com/photos/7173666/pexels-photo-7173666.jpeg')" 
             }}
           >
             <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
@@ -115,7 +115,8 @@ const Hero = () => {
 
                 <h1 className='md:text-7xl text-4xl md:px-0 px-10 font-bold font-outfit text-center'>
                   {/* Experience The Harmonious <br /> Blend Of Luxury */}
-                  Step into a life elevated where <br /> comfort embraces luxury.
+                  Elevate your lifestyle where <br className='md:block hidden'/> luxury and comfort unite.
+
                 </h1>
 
                 <div>

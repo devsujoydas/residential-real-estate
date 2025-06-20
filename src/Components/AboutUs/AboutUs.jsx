@@ -22,12 +22,12 @@ const AboutUs = () => {
 
           <h1 className="md:text-5xl text-3xl font-semibold font-outfit">Welcome to Realar</h1>
 
-          <h1 className="text-lg text-gray-600">Quis nulla blandit vulputate morbi adipiscing sem vestibulum. Nulla turpis integer dui sed posuere sem. Id molestie mi arcu gravida lorem potenti.</h1>
+          <h1 className="text-sm text-gray-600">Quis nulla blandit vulputate morbi adipiscing sem vestibulum. Nulla turpis integer dui sed posuere sem. Id molestie mi arcu gravida lorem potenti.</h1>
 
 
           <div className="flex gap-5 items-center md:flex-row flex-col">
-            <div className="md:border-r space-y-5 md:w-1/2">
-              <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Quality real estate services</h1>
+            <div className="md:border-r space-y-5 md:w-1/2 md:text-lg text-sm">
+              <h1 className="flex justify-start items-center gap-3 "><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Quality real estate services</h1>
               <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />100% Satisfaction guarantee</h1>
               <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Highly professional team</h1>
               <h1 className="flex justify-start items-center gap-3"><img src="https://wordpress.themeholy.com/realar/wp-content/themes/realar/assets/img/checkmark.svg" alt="" />Dealing always on time</h1>

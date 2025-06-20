@@ -28,7 +28,7 @@ const FeaturedListing = () => {
 
           <div className="flex justify-between items-center md:flex-row flex-col gap-5">
             <h1 className='text-sm'>Quis nulla blandit vulputate morbi adipiscing sem vestibulum. Nulla turpis integer dui <br /> sed posuere sem. Id molestie mi arcu gravida lorem potenti.</h1>
-            <button className="btn-text-primary">View All Properties<FaArrowRight /></button>
+            <button  className="btn-text-primary" >View All Properties<FaArrowRight /></button>
           </div>
         </div>
 
@@ -42,7 +42,7 @@ const FeaturedListing = () => {
             freeMode={true}
             breakpoints={{
               640: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 20,
               },
               768: {
