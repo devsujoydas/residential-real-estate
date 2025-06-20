@@ -16,19 +16,19 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState()
 
     useEffect(() => {
-        fetch("https://residential-real-estate-server.vercel.app/TeamMembers")
+        fetch("http://localhost:3000/TeamMembers")
             .then(res => res.json())
             .then(data => setTeamMembers(data))
     }, [])
 
     useEffect(() => {
-        fetch("https://residential-real-estate-server.vercel.app/Blogs")
+        fetch("http://localhost:3000/Blogs")
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
 
     useEffect(() => {
-        fetch("https://residential-real-estate-server.vercel.app/FeaturedProperties")
+        fetch("http://localhost:3000/FeaturedProperties")
             .then(res => res.json())
             .then(data => setFeaturedProperties(data))
     }, [])
