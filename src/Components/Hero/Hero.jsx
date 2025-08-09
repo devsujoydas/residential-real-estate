@@ -29,7 +29,7 @@ const Hero = () => {
             className=' text-white bg-no-repeat bg-cover'
             style={{
               backgroundImage:
-                "url('https://images.pexels.com/photos/7534561/pexels-photo-7534561.jpeg')"
+                "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_1.png')"
             }}
           >
             <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
@@ -43,7 +43,7 @@ const Hero = () => {
 
 
                 <h1 className='md:text-7xl text-4xl font-bold font-outfit md:px-0 px-20 text-center'>
-                 Uncover the comfort and <br className='md:block hidden'/> flexibility of your dream home.
+                  Elevate Your Lifestyle Where <br /> Luxury Meets Comfort
                 </h1>
 
                 <div>
@@ -66,7 +66,7 @@ const Hero = () => {
             className=' text-white bg-no-repeat bg-cover'
             style={{
               backgroundImage:
-                "url('https://images.pexels.com/photos/6538934/pexels-photo-6538934.jpeg')"
+                "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_2.png')"
             }}
           >
             <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
@@ -78,7 +78,7 @@ const Hero = () => {
                 </div>
 
                 <h1 className='md:text-7xl text-4xl font-bold text-wrap  md:px-0 px-20 font-outfit text-center'>
-                  Find your ideal home comfortable, <br className='md:block hidden'/> flexible, and uniquely yours
+                  Discover Your Comfortable <br /> & Flexible Living House
                 </h1>
 
                 <div>
@@ -101,7 +101,7 @@ const Hero = () => {
             className=' text-white bg-no-repeat bg-cover'
             style={{
               backgroundImage:
-                "url('https://images.pexels.com/photos/7173666/pexels-photo-7173666.jpeg')" 
+                "url('https://wordpress.themeholy.com/realar/wp-content/uploads/2024/09/hero_bg_5_3.png')"
             }}
           >
             <div className='md:h-[850px] h-[85vh] hero-bg-color w-full  flex justify-center  items-center'>
@@ -114,9 +114,7 @@ const Hero = () => {
                 </div>
 
                 <h1 className='md:text-7xl text-4xl md:px-0 px-10 font-bold font-outfit text-center'>
-                  {/* Experience The Harmonious <br /> Blend Of Luxury */}
-                  Elevate your lifestyle where <br className='md:block hidden'/> luxury and comfort unite.
-
+                  Experience The Harmonious <br /> Blend Of Luxury
                 </h1>
 
                 <div>
